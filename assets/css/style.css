@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+/* carousel section */
+
+.carousel_1{
+    postion: relative;
+}
+
+.carousel_item{
+    height: 120px;
+    width: 120px;
+    background-color: lightskyblue;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: black;
+}
+
+.carousel_nav_icons{
+    width: 120px;
+    padding: 20px;
+    position: absolute;
+    bottom: 1;
+    background: red;
+    text-align: center;
+    
+}
+
+.carousel_btn{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgb(255 ,255 ,255 ,0.3);
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.carousel_btn:hover{
+    background: rgb(255 ,255 ,255 ,1);
+}
