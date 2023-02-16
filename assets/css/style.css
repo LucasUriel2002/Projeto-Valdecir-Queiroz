@@ -82,3 +82,53 @@ a {
     background-position: bottom 0 left 0;
     
 }
+
+/*Footer config*/
+
+footer {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #0F412B;
+    color: white;
+}
+
+footer h2 {
+    padding-bottom: 15px;
+}
+
+.resumo {
+    line-height: 25px;
+    padding-bottom: 35px;
+}
+
+.acesso ul {
+    padding-left: 15px;
+    padding-bottom: 35px;
+    line-height: 25px;
+}
+
+.fale textarea {
+    background-color: #dddddd;
+    color: #666666;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 1em;
+    line-height: 1.4;
+}
+
+footer button {
+    border-radius: 15px;
+    border: transparent;
+    background-color: #DE4040;
+    color: white;
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+}
+
+footer a {
+    color: white;
+}
