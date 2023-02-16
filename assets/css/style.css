@@ -26,6 +26,7 @@ a {
     padding: 5px 20px;
     background-color: transparent;
     transition: 0.3s;
+    z-index: 2;
 }
 
 #nav {
@@ -132,3 +133,132 @@ footer button {
 footer a {
     color: white;
 }
+
+
+
+/* slider */
+
+#card-slider{
+height: 500px;
+width: 100%;
+background: #0F412B;
+position: relative;
+}
+
+
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: lightblue;
+  }
+  
+  section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  .card{
+    position: relative;
+    background: #fff;  
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 240px;
+  }
+  
+  .card::before{
+    content: "";
+    position: absolute;
+    height: 40%;   /* vertical size of the card background */
+    width: 100%;
+    background: lightblue;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card .card-content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .swiper-pagination{
+    position: relative;
+    bottom: 10px;
+  }
+  
+  
+
+  
+  .card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .name-profession .profession{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .card .aboutMe-button{
+    position: relative;
+    margin-top: 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .card .aboutMe-button:hover{
+    background-color: #67B7D1;
+  }
+  
+  /* swiper */
+  
+  .swiper-wrapper{
+    height: 500px;
+    bottom: 20px;
+  }
+
+  .swiper {
+    top: 50%;
+    transform: translateY(-47%);
+    width: 280px;
+  }
+  
+
+  .swiper-slide{
+   width: 350px;
+  }
+  
+  @media (min-width: 429px) {
+    .swiper{
+      width: 950px;
+    }
+  }
+  
+
+  .swiper-section{
+    
+    height: 100vh;
+    display: flex;
+   
+  }
