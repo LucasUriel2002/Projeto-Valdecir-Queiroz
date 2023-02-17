@@ -15,15 +15,50 @@ body{
   background: var(--primary-background-color);
 }
 
+h1 {
+  font-size: 18pt;
+}
+
+h2 {
+  padding: 100px 10px 20px 10px;
+  font-size: 15pt;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: #666666;
+}
+
+h3 {
+  font-size: 12pt;
+}
+
 a {
     text-decoration: none;
     color: black;
+}
+
+button {
+  border-radius: 15px;
+    border: transparent;
+    background-color: #DE4040;
+    color: white;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
 }
 
 .logo {
     width: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
 }
 
 /* Navbar config*/
@@ -54,7 +89,7 @@ a {
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 50px 0 0 10px;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 15pt;
 }
 
 #nav.active {
@@ -99,14 +134,14 @@ a {
 .icon-phrases{
   box-sizing: border-box;
   width: 100%;
-  height: 900px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .icon-phrases .container{
-  width: 45rem ;
+  width: 45rem;
 
 }
 
@@ -123,12 +158,12 @@ a {
 }
 
 .slider .material-icons{
-  padding-top: 2rem;
+  padding-top: 3rem;
   font-size: 4rem;
 }
 
-.icon-phrases .container .slick-arrow{
-  background-color: #0F412B;
+.icon-phrases .container .slick-arrow::before {
+  color: #666666;
 }
 
 .icon-phrases .container .slick-slide{
@@ -170,12 +205,17 @@ a {
   background: var(--secondary-background-color);
   text-align: center;
 }
+
+.about-us h1 {
+  padding-bottom: 20px;
+}
+
 .about-us .image{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 100%;
   padding: 3px;
   background: var(--primary-background-color);
@@ -183,11 +223,16 @@ a {
 
 .about-us .image img{
   /* trocar esses valores por rem */
-  height: 100%; 
-  width: 100%;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius:100%;
   border: 10px solid var(--seconday-background-color);
+}
+
+.about-us h3 {
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 
@@ -203,7 +248,7 @@ footer {
     color: white;
 }
 
-footer h2 {
+footer h1 {
     padding-bottom: 15px;
 }
 
@@ -224,19 +269,9 @@ footer h2 {
     border-radius: 10px;
     border: 2px solid transparent;
     outline: none;
-    padding: 1em;
+    padding: 10px;
     line-height: 1.4;
     
-}
-
-footer button {
-    border-radius: 15px;
-    border: transparent;
-    background-color: #DE4040;
-    color: white;
-    width: 80px;
-    height: 25px;
-    cursor: pointer;
 }
 
 footer a {
