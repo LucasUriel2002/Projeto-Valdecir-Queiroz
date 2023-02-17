@@ -8,7 +8,9 @@
         <title>Valdecir Queiroz</title>
         <link rel="stylesheet" href="assets/css/style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
+        <!--Slider-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" class="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" class="">
     </head>
 
     <body>
@@ -37,12 +39,49 @@
 
      </section>
 
-        <h1>"Nossa responsabilidade é difundir a agricultura orgânica no Brasil, sensibilizar 
-             produtores para importânciado equilíbrio ecológico e desenvolver práticas agrícolas"</h1>
+     
 
-     <section class="icon-phrases" id="icon-phrases-id">
+     <section class="icon-phrases">
 
-            <div class="carousel_1">
+        <div class="container">
+
+            <!-- <h1>"Nossa responsabilidade é difundir a agricultura orgânica no Brasil, sensibilizar 
+                produtores para importânciado equilíbrio ecológico e desenvolver práticas agrícolas"</h1> -->
+            
+           
+                <div class="slider">
+                   <i class="material-icons">grass</i>
+                    <p>Agricultura Sustentável</p>
+                </div>
+
+                <div class="slider">
+                   <i class="material-icons">grass</i>
+                    <p>Livre de Agrotóxicos</p>
+                </div>
+
+                <div class="slider">
+                   <i class="material-icons">grass</i>
+                    <p>Agricultura Orgânica</p>
+                </div>
+         
+                <div class="slider">
+                   <i class="material-icons">grass</i>
+                    <p>Equilíbrio Ecológico</p>
+                </div>
+
+                <div class="slider">
+                   <i class="material-icons">grass</i>
+                    <p>Agricultura eco inteligente</p>
+                </div>
+
+                <div class="slider">
+                   <i class="material-icons">grass</i>
+                    <p>Agricultura sintrópica</p>
+                </div>
+
+
+            
+            <!-- <div class="carousel_1">
                 <div class="carousel_item">Agricultura Sustentável</div>
                 <div class="carousel_item">Livre de Agrotóxicos</div>
                 <div class="carousel_item">Agricultura Orgânica</div>
@@ -54,19 +93,79 @@
                     <span class="carousel_btn"></span>
                     <span class="carousel_btn"></span>
                 </div>
-             </div>  
+             </div>   -->
+        </div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script>
+
+            $('.icon-phrases .container').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            
+            responsive: [{
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        speed: 300,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 780,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        speed: 300,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 530,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        speed: 500,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        infinite: true,
+                        dots: true
+                    }
+                    }]
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                
+           
+            });
+
+        </script>
      </section>
 
      <section class="about-us">
-
-        <img src="" alt="" class="">
-
+        <div class="container">
+           
+        <div class="image">   
+        <img src="assets/imgs/slider/img1.jpg" alt="" class="">
+        </div> 
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt cum beatae reprehenderit
              commodi! Accusantium reprehenderit ipsam eos impedit debitis voluptas qui ipsa optio, </h2>
              
         <button class="about-us-btn"></button>    
-
+    </div>
 
 
         
