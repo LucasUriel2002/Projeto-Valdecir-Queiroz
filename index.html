@@ -12,6 +12,8 @@
         <!--Slider-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" class="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" class="">
+        <!-- teste -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     </head>
 
     <body>
@@ -30,6 +32,13 @@
                 <li>Parceiros</li>
                 <a href="#" ><i id="close" class="material-icons">close</i></a>
             </ul>
+                
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+            
+            
                 <i id="bar" class="material-icons">menu</i>
         </nav>
 
@@ -47,7 +56,6 @@
 
         <div class="container">
             
-           
                 <div class="slider">
                    <i class="material-icons">volunteer_activism</i>
                     <p>Agricultura Sustentável</p>
@@ -78,21 +86,6 @@
                     <p>Agricultura sintrópica</p>
                 </div>
 
-
-            
-            <!-- <div class="carousel_1">
-                <div class="carousel_item">Agricultura Sustentável</div>
-                <div class="carousel_item">Livre de Agrotóxicos</div>
-                <div class="carousel_item">Agricultura Orgânica</div>
-                <div class="carousel_item">Equilíbrio Ecológico</div>
-                
-                <div class="carousel_nav_icons">
-                    <span class="carousel_btn"></span>
-                    <span class="carousel_btn"></span>
-                    <span class="carousel_btn"></span>
-                    <span class="carousel_btn"></span>
-                </div>
-             </div>   -->
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -103,10 +96,12 @@
             dots: true,
             infinite: true,
             speed: 300,
-            autoplay: true,
+           autoplay: true,
             autoplaySpeed: 4000,
             slidesToShow: 3,
             slidesToScroll: 2,
+            centerMode: true,
+            focusOnSelect: true,
             
             responsive: [{
                     breakpoint: 1100,
@@ -117,7 +112,9 @@
                         autoplay: true,
                         autoplaySpeed: 4000,
                         infinite: true,
-                        dots: true
+                        dots: true,
+                        centerMode: true,
+                        focusOnSelect: true
                     }
                     },
                     {
@@ -129,7 +126,9 @@
                         autoplay: true,
                         autoplaySpeed: 4000,
                         infinite: true,
-                        dots: true
+                        dots: true,
+                        centerMode: false,
+                        focusOnSelect: false
                     }
                     },
                     {
@@ -141,7 +140,9 @@
                         autoplay: true,
                         autoplaySpeed: 4000,
                         infinite: true,
-                        dots: true
+                        dots: true,
+                        centerMode: false,
+                        focusOnSelect: false
                     }
                     }]
                     // You can unslick at a given breakpoint now by adding:
@@ -152,6 +153,7 @@
             });
 
         </script>
+
      </section>
 
      <section class="about-us">
@@ -170,18 +172,122 @@
         
      </section>
 
-     <!-- <section class="services">
-       
-            <div class="services-item">Consultoria</div>
-            <div class="services-item">Orientação</div>
-            <div class="services-item">Cursos</div>
-            <div class="services-item">Palestras</div> -->
-
-    
      </section>
 
      <!-- para fazer no JavaScripit -->
-     <section class="partners"></section>
+     <section class="partners">
+
+        <h1>Clientes e Parceiros</h1>
+
+            <div class="container">
+                
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/terraEco.png" alt="">
+                </div>
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/logo-embrapa.jpg" alt="">
+                </div>
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/terraEco.png" alt="">
+                </div>
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/logo-embrapa.jpg" alt="">
+                </div>
+
+                <div class="slider">
+                    <img src="assets/imgs/slider/img1.jpg" alt="">
+                </div>
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/logo-embrapa.jpg" alt="">
+                </div>
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/terraEco.png" alt="">
+                </div>   
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/terraEco.png" alt="">
+                </div> 
+                
+                <div class="slider">
+                    <img src="assets/imgs/logos/terraEco.png" alt="">
+                </div>   
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/terraEco.png" alt="">
+                </div>   
+
+                <div class="slider">
+                    <img src="assets/imgs/logos/terraEco.png" alt="">
+                </div>   
+
+
+
+
+
+        </div>
+
+        <script>
+
+            $('.partners .container').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            slidesToShow: 8,
+            slidesToScroll: 2,
+            responsive: [{
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        speed: 300,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        infinite: true,
+                        dots: true
+                        
+                    }
+                    },
+                    {
+                    breakpoint: 780,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        speed: 300,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        infinite: true,
+                        dots: true
+                      
+                    }
+                    },
+                    {
+                    breakpoint: 530,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        speed: 500,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        infinite: true,
+                        dots: true
+                  
+                    }
+                    }]
+            });
+
+        </script>
+    
+        <button class="client-btn">Mais clientes</button> 
+     </section>
 
      <section class="contact-us">
 
@@ -204,7 +310,7 @@
 
 
      <section class="Gallery"></section>
-
+     <script  src="assets/js/script.js"></script>
     </body>
     
     <footer>
@@ -242,5 +348,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    
+
 </html>

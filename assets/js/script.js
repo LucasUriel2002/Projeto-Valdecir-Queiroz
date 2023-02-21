@@ -1,6 +1,10 @@
+
+
+// navBar config
 const bar = document.getElementById('bar')
 const close = document.getElementById('close')
 const nav = document.getElementById('nav')
+
 
 const navbar = document.getElementById('navbar')
 var sticky = navbar.offsetTop
@@ -28,4 +32,24 @@ function myFunction() {
     }
   }
 
-  
+ 
+
+
+// theme Button config
+
+const bodyElement = document.body;
+const themeToggleBtn = document.getElementById('theme-toggle-btn');
+const currentTheme = localStorage.getItem('currentTheme');
+
+if(currentTheme){
+    bodyElement.classList.add('dark-theme');
+}
+
+themeToggleBtn.addEventListener('click', () => {
+    bodyElement.classList.toggle('dark-theme');
+    if(bodyElement.classList.contains('dark-theme')){
+        localStorage.setItem('currentTheme', 'themeActive');
+    }else{
+        localStorage.removeItem('currentTheme');
+    }
+});
