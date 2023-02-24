@@ -32,7 +32,7 @@ h1{
 }
 
 h2 {
-  padding: 100px 10px 20px 10px;
+  padding: 80px 10px 20px 10px;
   font-size: 15pt;
   align-items: center;
   justify-content: space-between;
@@ -76,15 +76,20 @@ button {
 
 /* theme button config */
 
-.moon-icon{
+#moon-icon{
   display: none;
 }
-.dark-theme .sun-icon{
+.dark-theme #sun-icon{
   display: none;
 }
 
-.dark-theme .moon-icon{
+.dark-theme #moon-icon{
   display: block;
+}
+
+#theme-toggle-btn {
+  height: 24px;
+  cursor: pointer;
 }
 
 /* Navbar config*/
@@ -142,6 +147,12 @@ button {
 #navbar.top {
     background-color: var(--primary-background-color);;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.nav-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 /*Hero config*/
@@ -283,44 +294,57 @@ button {
 }
 
 
-/* about-us */
+/*contact us*/
 
-.about-us .container{
-  padding: 7vh;
-  height: 650px;
-  width: 100%;
+.contact-us{
   background: var(--secondary-background-color);
-  text-align: center;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;  
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
 }
 
-.about-us h1 {
-  padding-bottom: 20px;
+.contact-us .services-item{
+  display: flex;
+  height: 50vw;
+  width: 90vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: var(--box-shadow-slider);
+  -webkit-box-shadow: var(--box-shadow-slider);
+  -moz-box-shadow: var(--box-shadow-slider);
+  transition: 0.1s;  
+  z-index: 1;
 }
 
-.about-us .image{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 250px;
-  width: 250px;
-  border-radius: 100%;
-  padding: 3px;
-  background: var(--primary-background-color);
+.service-top {
+  margin-top: 20px;
 }
 
-.about-us .image img{
-  /* trocar esses valores por rem */
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius:100%;
-  border: 10px solid var(--seconday-background-color);
+.contact-us .services-item h2 {
+  padding: 0px;
 }
 
-.about-us h3 {
-  padding-top: 40px;
-  padding-bottom: 15px;
+.contact-us .services-item:hover {
+  transform: translateY(-5px);
+  
+}
+
+.contact-us .material-symbols-outlined {
+  font-size: 40pt !important;
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 200;
+  cursor: pointer;
+  color: green;
+  transition: 0.1s;
+}
+
+.contact-us .services-item:hover .material-symbols-outlined{
+  font-size: 42pt !important;
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 200;
 }
 
 /*Partners config*/
