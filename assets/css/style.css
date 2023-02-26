@@ -293,6 +293,45 @@ button {
   }
 }
 
+/* about-us */
+
+.about-us .container{
+  padding: 7vh;
+  height: 650px;
+  width: 100%;
+  background: var(--secondary-background-color);
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-us h1 {
+  padding-bottom: 20px;
+}
+
+.about-us .image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  padding: 3px;
+  background: var(--primary-background-color);
+}
+
+.about-us .image img{
+  /* trocar esses valores por rem */
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius:100%;
+  border: 10px solid var(--seconday-background-color);
+}
+
+.about-us h3 {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
 
 /*contact us*/
 

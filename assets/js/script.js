@@ -53,3 +53,116 @@ themeToggleBtn.addEventListener('click', () => {
         localStorage.removeItem('currentTheme');
     }
 });
+
+
+
+//partners Slider slick config
+
+$('.partners .container').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 8,
+    slidesToScroll: 2,
+    responsive: [{
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                infinite: true,
+                dots: true
+                
+            }
+            },
+            {
+            breakpoint: 780,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                infinite: true,
+                dots: true
+              
+            }
+            },
+            {
+            breakpoint: 530,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                speed: 500,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                infinite: true,
+                dots: true
+          
+            }
+            }]
+    });
+
+
+//Card Slider slick config
+
+
+$('.icon-phrases .container').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+   autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    centerMode: true,
+    focusOnSelect: true,
+    
+    responsive: [{
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                infinite: true,
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            }
+            },
+            {
+            breakpoint: 780,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                infinite: true,
+                dots: true,
+                centerMode: false,
+                focusOnSelect: false
+            }
+            },
+            {
+            breakpoint: 530,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 500,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                infinite: true,
+                dots: true,
+                centerMode: false,
+                focusOnSelect: false
+            }
+            }]        
+    });
