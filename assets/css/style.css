@@ -3,11 +3,15 @@
 :root{
   --primary-background-color: #f5f5f5;
   --secondary-background-color: #fff;
+  --primary-dark-background-color: #333;
+  --secondary-dark-background-color: #222020;
   --text-white-color: #fff;
   --text-grey-color: #666666;
+  --text-dark-grey-color: #121212;
   --box-shadow-slider: 0px 1px 16px -4px rgba(0,0,0,0.45);      
 }
 
+/* General adjustments */
 
 * {
     margin: 0;
@@ -21,11 +25,6 @@ body{
   transition: background-color .25s, color .25s;
 }
 
-body.dark-theme{
-  --primary-background-color: #333;
-  --secondary-background-color: #222020;
-}
-
 h1{
   font-size: 18pt;
   color: var(--text-grey-color);
@@ -37,7 +36,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  color: #666666;
+  color: var(--text-grey-color);
 }
 
 h3 {
@@ -73,17 +72,31 @@ button {
   'opsz' 48;
 }
 
+/* Dark-theme colors */
 
-/* theme button config */
-
-#moon-icon{
-  display: none;
-}
-.dark-theme #sun-icon{
-  display: none;
+body.dark-theme{
+  --primary-background-color: var(--primary-dark-background-color);
+  --secondary-background-color: var(--secondary-dark-background-color);
 }
 
-.dark-theme #moon-icon{
+body.dark-theme h2{
+ color: var(--text-dark-grey-color);
+}
+
+body.dark-theme .slick-current{
+  background-color: #424242;
+}
+
+/* Theme button config */
+
+#moon-icon {
+  display: none;
+}
+.dark-theme #sun-icon {
+  display: none;
+}
+
+.dark-theme #moon-icon {
   display: block;
 }
 
@@ -93,6 +106,7 @@ button {
 }
 
 /* Navbar config*/
+
 .navbar {
     display: flex;
     align-items: center;
@@ -158,13 +172,15 @@ button {
 /*Hero config*/
 
 .hero {
-    background-image: url("../imgs/hero_teste.jpg");
+    background-image: linear-gradient(180deg, rgba(15,15,15,0.888268156424581) 0%, rgba(0,0,0,0.3268156424581006) 12%, rgba(255,255,255,0) 100%),
+    url("../imgs/hero_teste.jpg");
     height: 60vh;
     width: 100%;
     background-size: cover;
     background-position: bottom 0 left 0;
     border-radius: 0% 0% 50% 50% / 0% 60% 7% 7% ;  
 }
+
 
 /* Icon-Phrases */
 
@@ -288,12 +304,13 @@ button {
     box-shadow: var(--box-shadow-slider);
     -webkit-box-shadow: var(--box-shadow-slider);
     -moz-box-shadow: var(--box-shadow-slider);
-    transition: 100ms box-shadow ease-in-out;
+    transition: 300ms box-shadow ease-in-out;
+    transition: 300ms background-color ease-in-out;
     transition-delay: 30ms;
   }
 }
 
-/* about-us */
+/* about-us config */
 
 .about-us .container{
   padding: 7vh;
@@ -356,8 +373,7 @@ button {
   box-shadow: var(--box-shadow-slider);
   -webkit-box-shadow: var(--box-shadow-slider);
   -moz-box-shadow: var(--box-shadow-slider);
-  transition: 0.1s;  
-  z-index: 1;
+
 }
 
 .service-top {
@@ -397,8 +413,6 @@ button {
   justify-content: center;
   flex-direction: column;
 }
-
-
 
 .partners .container{
   width: 45rem;
@@ -462,12 +476,6 @@ button {
   }
 }
 
-/*contact us*/
-
-.contact-us{
-  background: var(--secondary-background-color);
-}
-
 /*Footer config*/
 
 footer {
@@ -506,7 +514,7 @@ footer h1 {
 }
 
 footer a {
-    color: white;
+    color: var(--secondary-background-color);
 }
 
 
