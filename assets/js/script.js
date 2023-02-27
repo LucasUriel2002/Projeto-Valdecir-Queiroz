@@ -2,9 +2,7 @@
 
 // navBar config
 const bar = document.getElementById('bar')
-const close = document.getElementById('close')
 const nav = document.getElementById('nav')
-
 
 const navbar = document.getElementById('navbar')
 var sticky = navbar.offsetTop
@@ -14,21 +12,34 @@ window.onscroll = function() {myFunction()}
 
 if (bar) {
     bar.addEventListener('click', () => {
-        nav.classList.add('active')
-    })
-}
-
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active')
+        if (nav.classList.contains('active')){
+            if (window.pageYOffset > sticky){
+                nav.classList.remove('active')
+                bar.classList.remove('openmenu')
+            } else {
+                nav.classList.remove('active')
+                navbar.classList.remove('top')
+                bar.classList.remove('openmenu')
+                bar.classList.remove("colormenu")
+            }
+        } else {
+            nav.classList.add('active')
+            navbar.classList.add("top")
+            bar.classList.add('openmenu')
+        }
+        
     })
 }
 
 function myFunction() {
     if (window.pageYOffset > sticky) {
-      navbar.classList.add("top");
+      navbar.classList.add("top")
+      bar.classList.add("colormenu")
     } else {
-      navbar.classList.remove("top");
+        if (nav.classList.contains('active') === false){
+            navbar.classList.remove("top")
+            bar.classList.remove("colormenu")
+        }
     }
   }
 
