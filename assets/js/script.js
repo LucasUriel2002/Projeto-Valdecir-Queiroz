@@ -60,11 +60,11 @@ themeToggleBtn.addEventListener('click', () => {
 
 $('.partners .container').slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     infinite: true,
-    speed: 300,
+    speed: 600,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     slidesToShow: 8,
     slidesToScroll: 2,
     responsive: [{
@@ -72,12 +72,12 @@ $('.partners .container').slick({
             settings: {
                 slidesToShow: 6,
                 slidesToScroll: 1,
-                speed: 300,
+                speed: 600,
                 autoplay: true,
                 autoplaySpeed: 4000,
                 infinite: true,
-                dots: true
-                
+                dots: true,
+                arrows: false
             }
             },
             {
@@ -85,11 +85,12 @@ $('.partners .container').slick({
             settings: {
                 slidesToShow: 5,
                 slidesToScroll: 1,
-                speed: 300,
+                speed: 600,
                 autoplay: true,
                 autoplaySpeed: 4000,
                 infinite: true,
-                dots: true
+                dots: true,
+                arrows: false
               
             }
             },
@@ -98,12 +99,12 @@ $('.partners .container').slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                speed: 500,
+                speed: 600,
                 autoplay: true,
-                autoplaySpeed: 4000,
+                autoplaySpeed: 3000,
                 infinite: true,
-                dots: true
-          
+                dots: false,
+                arrows: false
             }
             }]
     });
