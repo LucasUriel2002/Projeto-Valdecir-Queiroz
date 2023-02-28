@@ -73,9 +73,9 @@ $('.partners .container').slick({
     dots: true,
     arrows: true,
     infinite: true,
-    speed: 600,
+    speed: 300,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 400,
     slidesToShow: 8,
     slidesToScroll: 2,
     responsive: [{
@@ -112,10 +112,13 @@ $('.partners .container').slick({
                 slidesToScroll: 1,
                 speed: 600,
                 autoplay: true,
-                autoplaySpeed: 3000,
+                autoplaySpeed: 400,
                 infinite: true,
                 dots: false,
-                arrows: false
+                arrows: false,
+                centerMode: true
+                
+                
             }
             }]
     });
@@ -128,7 +131,7 @@ $('.icon-phrases .container').slick({
     dots: true,
     infinite: true,
     speed: 300,
-   autoplay: true,
+    autoplay: true,
     autoplaySpeed: 4000,
     slidesToShow: 3,
     slidesToScroll: 2,

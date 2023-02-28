@@ -5,6 +5,10 @@
   --secondary-background-color: #fff;
   --primary-dark-background-color: #333;
   --secondary-dark-background-color: #222020;
+  --light-green-color: #8BC34A;
+  --medium-green-color: #689F38;
+  --dark-greem-color: #33691E;
+  --light-brown-color: #D7CCC8;
   --text-area-background-color: #dddddd;
   --text-white-color: #fff;
   --text-grey-color: #666666;
@@ -53,7 +57,7 @@ a {
 button {
   border-radius: 15px;
     border: transparent;
-    background-color: #DE4040;
+    background-color: var(--medium-green-color);
     color: var(--text-white-color);
     width: 100px;
     height: 35px;
@@ -107,6 +111,26 @@ body.dark-theme .slick-current{
   cursor: pointer;
 }
 
+
+/*arrow down config*/
+
+.phrase-arrow {
+  text-align: center;
+}
+
+.phrase-arrow h2{
+  padding-top: 1rem;
+}
+
+.phrase-arrow .material-symbols-outlined{
+  font-size: 4rem !important;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
 /* Navbar config*/
 
 .nav-container {
@@ -115,7 +139,8 @@ body.dark-theme .slick-current{
     position: fixed;
     min-width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 10;
+    pointer-events: none;
 }
 
 #navbar {
@@ -129,6 +154,8 @@ body.dark-theme .slick-current{
   align-items: center;
   transition: 0.3s;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  pointer-events:all;
+  z-index: 9;
 }
 
 #nav {
@@ -147,6 +174,8 @@ body.dark-theme .slick-current{
     padding: 50px 0 0 10px;
     transition: 0.3s;
     font-size: 15pt;
+    pointer-events:all;
+    z-index: 8;
 }
 
 #navbar.active {
@@ -179,8 +208,21 @@ body.dark-theme .slick-current{
     cursor: pointer;
     font-size: 35px;
 }
+/*Division config*/
 
+.division-up{
+  width: 100%;
+  height: 10vw;
+  background-color: var(--secondary-background-color);
+  border-radius: 51% 49% 49% 51% / 100% 100% 0% 0% ;
+}
 
+.division-down{
+  width: 100%;
+  height: 10vw;
+  background-color: var(--secondary-background-color);
+  border-radius: 51% 49% 49% 51% / 0% 0% 100% 100%;
+}
 
 /*Menu icon config*/
 
@@ -291,7 +333,7 @@ body.dark-theme .slick-current{
   padding: 0 2vw 0 2vw; 
 }
 
-.icon-phrases .slick-current{
+.icon-phrases .slick-current {
   height: 270px;
   border-radius: 20px;
   box-shadow: var(--box-shadow-slider);
@@ -302,8 +344,14 @@ body.dark-theme .slick-current{
   transition-delay: 150ms;
 }
 
-.icon-phrases .slider .material-symbols-outlined{
-  padding-top: 3rem;
+.icon-phrases .slider p {
+ margin-top: 1rem;
+ font-weight: 900;
+}
+
+.icon-phrases .slider .material-symbols-outlined {
+  margin-top: 2rem;
+  padding: 3vw;
   font-size: 4rem !important;
   font-variation-settings:
   'FILL' 0,
@@ -312,14 +360,54 @@ body.dark-theme .slick-current{
   'opsz' 48;
 }
 
+.slide-01{
+  color: #D8A550;
+  background-color: rgba(234, 197, 117, 0.5); /*yellow*/
+  border-radius: 51% 49% 49% 51% / 67% 71% 29% 33% ;
+}
+
+.slide-02{
+  color: #4B6F7B;
+  background-color: rgba(94, 136, 157, 0.5); /*blue*/
+  border-radius: 51% 49% 49% 51% / 67% 71% 29% 33% ;
+}
+
+.slide-03{
+  color: rgba(129, 98, 66, 1);
+  background-color: rgba(207, 179, 146, 1); /*pink*/
+  border-radius: 51% 49% 49% 51% / 67% 71% 29% 33% ;
+}
+
+.slide-04{
+  color: #725E8F;
+  background-color: rgba(182, 158, 195, 0.5); /*purple*/
+  border-radius: 51% 49% 49% 51% / 67% 71% 29% 33% ;
+}
+
+.slide-05{
+  color: #547F5D;
+  background-color: rgba(163, 204, 164, 0.5); /*green*/
+  border-radius: 51% 49% 49% 51% / 67% 71% 29% 33% ;
+}
+
+.slide-06{
+  color: #D46B3E;
+  background-color: rgba(242, 173, 120, 0.5); /*orange*/
+  border-radius: 51% 49% 49% 51% / 67% 71% 29% 33% ;
+}
+
 .icon-phrases .container .slick-arrow::before {
   color: var(--slick-arrow-color-1);
 }
 
-.icon-phrases .container .slick-slide{
-  margin: 10px;
-
+.icon-phrases .container .slick-dots {
+  margin-bottom: 2rem; /*need to be adjusted in the media query */
 }
+
+.icon-phrases .container .slick-slide {
+  margin: 10px;
+}
+
 
 @media  (min-width: 1100px) {
 
@@ -403,6 +491,7 @@ body.dark-theme .slick-current{
 }
 
 .about-us h1 {
+  font-size: 20pt;
   padding-bottom: 20px;
 }
 
@@ -413,9 +502,8 @@ body.dark-theme .slick-current{
   height: 250px;
   width: 250px;
   border-radius: 100%;
-  padding: 3px;
-  background: var(--primary-background-color);
 }
+
 
 .about-us .image img{
   /* trocar esses valores por rem */
@@ -423,7 +511,7 @@ body.dark-theme .slick-current{
   height: 250px;
   object-fit: cover;
   border-radius:100%;
-  border: 10px solid var(--seconday-background-color);
+  
 }
 
 .about-us h3 {
@@ -474,7 +562,7 @@ body.dark-theme .slick-current{
   font-size: 40pt !important;
   font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 200;
   cursor: pointer;
-  color: green;
+  color: var(--light-green-color);
   transition: 0.1s;
 }
 
@@ -488,79 +576,38 @@ body.dark-theme .slick-current{
 .partners{
   box-sizing: border-box;
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.partners .container{
-  width: 45rem;
-
-}
-
-.partners .container .slick-arrow::before {
-  color: var(--slick-arrow-color-1);
-}
-
-
 .partners .container {
-  height: auto;
-  display: flex;
-  justify-content:end ;
-  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.margin-slick{
+  padding-right: 100px;
 }
 
 .partners .slider img{
   height: 100px;
   width: 100px;
   object-fit:scale-down;
- 
+  filter: saturate(0%) contrast(50%);
 }
 
-.partners .container .slick-slide{
-  margin: 10px;
+.partners .slick-current .slider img{
+  filter: saturate(100%) contrast(50%);
 }
 
 .client-btn{
   margin-top: 1rem;
 }
 
-@media  (min-width: 1100px) {
-  .partners .container{
-    width: 100rem ;
-  
-  }
-  .partners .slider{
-    height: 200px;
-  }
-  .partners .slider img{
-    height: 150px;
-    width: 150px;
-    object-fit:scale-down;
-   padding-left: 20px;
-  }
-  .partners{
-    height: 500px;
-  }
-  
-}
 
-@media  (max-width: 780px) {
-  .partners .container{
-    width: 30rem ;
-  
-  }
-  
-}
-
-@media  (max-width: 530px) {
-  .partners .container{
-    width: 100% ;
-   
-  }
-}
 
 /*Footer config*/
 
@@ -569,7 +616,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    background-color: #0F412B;
+    background-color: var(--medium-green-color);
     color: var(--text-white-color)
 }
 
