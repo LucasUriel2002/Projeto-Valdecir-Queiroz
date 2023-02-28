@@ -1,8 +1,8 @@
 
-
 // navBar config
 const bar = document.getElementById('bar')
 const nav = document.getElementById('nav')
+const text = document.getElementById('text')
 
 const navbar = document.getElementById('navbar')
 var sticky = navbar.offsetTop
@@ -26,6 +26,7 @@ if (bar) {
             nav.classList.add('active')
             navbar.classList.add("top")
             bar.classList.add('openmenu')
+            nav.classList.add('textclass')
         }
         
     })
