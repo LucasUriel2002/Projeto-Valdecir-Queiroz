@@ -75,10 +75,11 @@ $('.partners .container').slick({
     arrows: true,
     infinite: true,
     speed: 300,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 400,
     slidesToShow: 8,
     slidesToScroll: 2,
+    centerMode: true,
     responsive: [{
             breakpoint: 1100,
             settings: {
@@ -89,7 +90,8 @@ $('.partners .container').slick({
                 autoplaySpeed: 4000,
                 infinite: true,
                 dots: true,
-                arrows: false
+                arrows: false,
+                centerMode: true
             }
             },
             {
@@ -102,7 +104,8 @@ $('.partners .container').slick({
                 autoplaySpeed: 4000,
                 infinite: true,
                 dots: true,
-                arrows: false
+                arrows: false,
+                centerMode: true
               
             }
             },
@@ -113,11 +116,12 @@ $('.partners .container').slick({
                 slidesToScroll: 1,
                 speed: 600,
                 autoplay: true,
-                autoplaySpeed: 400,
+                autoplaySpeed: 2000,
                 infinite: true,
                 dots: false,
                 arrows: false,
-                centerMode: true
+                centerMode: true,
+                focusOnCenter: true
                 
                 
             }

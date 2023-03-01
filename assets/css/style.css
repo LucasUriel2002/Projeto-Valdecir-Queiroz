@@ -663,29 +663,29 @@ body.dark-theme footer button:hover{
   flex-direction: column;
 }
 
-.partners .container {
-  height: 100px;
-  width: 100%;
+.partners h1{
+  position: absolute;
+  transform: translateY(-100px);
 }
 
-.margin-slick{
-  padding-right: 100px;
+.partners .container {
+  height: 150px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .partners .slider img{
-  height: 100px;
-  width: 100px;
-  object-fit:scale-down;
-  filter: saturate(0%) contrast(50%);
-}
-
-.partners .slick-current .slider img{
-  filter: saturate(100%) contrast(50%);
+  height: 150px;
+  width: 150px;
+  object-fit:contain;
+  /* filter: saturate(0%) contrast(50%); */
+  padding-right: 60px;
 }
 
 .client-btn{
   margin-top: 1rem;
 }
+
 
 /*contact us*/
 
