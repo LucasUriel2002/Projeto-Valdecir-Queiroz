@@ -105,6 +105,18 @@ body.dark-theme button:hover{
   color: var(--dark-theme-green);
 }
 
+body.dark-theme #nav li a:hover{
+    color: var(--dark-theme-green);
+}
+
+body.dark-theme #nav li a.active{
+  color: var(--dark-theme-green);
+}
+
+body.dark-theme #nav li a::after {
+  background: var(--dark-theme-green);
+}
+
 body.dark-theme .slick-next{
   background-color: transparent;
 }
@@ -150,7 +162,7 @@ body.dark-theme .list a{
 }
 
 body.dark-theme .hero{
-  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/hero_teste.jpg");
+  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/12697414_1263341080359760_359460311908228984_o.jpg");
 }
 
 body.dark-theme .phrase-arrow {
@@ -204,6 +216,11 @@ body.dark-theme .partners h1{
 
 body.dark-theme .contact-us .material-symbols-outlined {
   color: var(--dark-theme-green);
+}
+
+body.dark-theme .contact-us .services-item{
+  background-color: var(--slider-background-grey);
+
 }
 
 body.dark-theme footer{
@@ -261,6 +278,11 @@ body.dark-theme footer button:hover{
   'wght' 100,
   'GRAD' 0,
   'opsz' 48;
+  transition: 0.5s;
+}
+
+.phrase-arrow .material-symbols-outlined:hover{
+  transform: translateY(20px);
 }
 
 /* Navbar config*/
@@ -294,7 +316,7 @@ body.dark-theme footer button:hover{
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-start;
     position: fixed;
     top: 100px;
@@ -303,11 +325,34 @@ body.dark-theme footer button:hover{
     width: 100%;
     background-color: var(--primary-background-color);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-    padding: 50px 0 0 10px;
+    padding: 50px 20px 0 10px;
     transition: 0.3s;
     font-size: 15pt;
     pointer-events:all;
     z-index: 8;
+}
+
+#nav li a:hover,
+#nav li a.active{
+    color: var(--medium-green-color);
+}
+
+#nav li a::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: var(--medium-green-color);
+  position: absolute;
+  bottom: -4px;
+  left: 60%;
+  transition: all 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: 50% 0%;
+}
+
+#nav a:hover::after,
+#nav a.active::after {
+  transform: scaleX(1);
 }
 
 #navbar.active {
@@ -328,6 +373,10 @@ body.dark-theme footer button:hover{
 
 #nav li {
     margin-bottom: 20px;
+}
+
+#nav a {
+  position: relative;
 }
 
 .nav-icons {
@@ -419,12 +468,12 @@ body.dark-theme footer button:hover{
 .hero {
     background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
     repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-    url("../imgs/hero_teste.jpg");
+    url("../imgs/12697414_1263341080359760_359460311908228984_o.jpg");
     background-size: 4px 4px;
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: bottom 0 left 0;
+    background-position: bottom 0 left -200px;
     border-radius: 0% 0% 50% 50% / 0% 60% 7% 7% ;  
     text-align: center;
     display: flex;
@@ -538,6 +587,18 @@ body.dark-theme footer button:hover{
 
 .icon-phrases .container .slick-slide {
   margin: 10px;
+}
+
+.slick-prev:hover {
+  background-color: transparent;
+  border: transparent;
+  color: transparent;
+}
+
+.slick-next:hover {
+  background-color: transparent;
+  border: transparent;
+  color: transparent;
 }
 
 
@@ -684,8 +745,8 @@ body.dark-theme footer button:hover{
 
 .client-btn{
   margin-top: 1rem;
+  transform: translateY(-25px);
 }
-
 
 /*contact us*/
 
@@ -739,7 +800,9 @@ body.dark-theme footer button:hover{
   font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 200;
 }
 
-
+.contact-us button{
+  margin-top: 10px;
+}
 
 /*Footer config*/
 
@@ -773,9 +836,17 @@ footer h1 {
     border-radius: 10px;
     border: 2px solid transparent;
     outline: none;
-    padding: 10px;
+    padding: 3vw;
     line-height: 1.4;
-    
+}
+
+.ta-1 {
+  width: 65vw;
+}
+
+.ta-2 {
+  width: 85vw;
+  height: 85vw;
 }
 
 footer a {
