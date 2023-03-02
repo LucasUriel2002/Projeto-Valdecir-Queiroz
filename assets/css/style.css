@@ -88,6 +88,11 @@ button:hover {
   'opsz' 48;
 }
 
+.d-grid{
+  display: grid;
+}
+
+
 /* Dark-theme colors */
 
 body.dark-theme{
@@ -162,7 +167,7 @@ body.dark-theme .list a{
 }
 
 body.dark-theme .hero{
-  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/12697414_1263341080359760_359460311908228984_o.jpg");
+  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/IMG_2959.jpg");
 }
 
 body.dark-theme .phrase-arrow {
@@ -468,7 +473,7 @@ body.dark-theme footer button:hover{
 .hero {
     background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
     repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-    url("../imgs/12697414_1263341080359760_359460311908228984_o.jpg");
+    url("../imgs/HD_imgs/IMG_2959.jpg");
     background-size: 4px 4px;
     height: 90vh;
     width: 100%;
@@ -748,6 +753,42 @@ body.dark-theme footer button:hover{
   transform: translateY(-25px);
 }
 
+
+
+/* gallery config */
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 400px;
+  overflow: hidden;
+
+}
+
+.gallery .box { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gallery .gallery-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery .gallery-home img{
+  overflow: hidden;
+  width: 43vw;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+
 /*contact us*/
 
 .contact-us{
@@ -863,5 +904,30 @@ footer button:hover {
   background-color: var(--medium-green-color);
   color: var(--text-white-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
