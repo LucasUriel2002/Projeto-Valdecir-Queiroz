@@ -218,6 +218,26 @@ body.dark-theme .partners h1{
   color: var(--text-dark-lighter-grey-color);
 }
 
+body.dark-theme .gallery h1{
+  color: white;
+}
+
+body.dark-theme .gallery-item-1{
+  filter: saturate(80%); 
+ }
+
+ body.dark-theme .gallery-item-2{
+  filter: saturate(80%); 
+ }
+
+ body.dark-theme .gallery-item-3{
+  filter: saturate(80%); 
+}
+
+body.dark-theme .gallery-item-4{
+  filter: saturate(100%);
+}
+
 body.dark-theme .contact-us .material-symbols-outlined {
   color: var(--dark-theme-green);
 }
@@ -807,6 +827,7 @@ body.dark-theme footer button:hover{
  .gallery-item-4{
   grid-column: 1/3;
   grid-row: 3/5;
+  filter: saturate(120%);
 }
 
 .gallery .button-gallery{
@@ -873,6 +894,47 @@ body.dark-theme footer button:hover{
 .contact-us button{
   margin-top: 10px;
 }
+
+/*Footer banner config*/
+.footer-banner{
+  width: 100%;
+  /* height: 270px; */
+  padding-top: 5vh;
+}
+
+.footer-banner .banner-logo{
+  height: 130px;
+  background-color: var(--medium-green-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.banner-logo img{
+  width: 80px;
+}
+
+.footer-banner h1{
+  color: white;
+}
+
+.footer-banner .banner-image{
+  height: 150px;
+  background-image: url("../imgs/HD_imgs/acerola3.jpg");
+  background-size: cover;
+  background-position: bottom -100px left 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+  box-shadow: 0px 1px 20px -4px rgba(0,0,0,0.8);
+}
+
 
 /*Footer config*/
 
