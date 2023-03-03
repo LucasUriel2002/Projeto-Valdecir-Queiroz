@@ -67,6 +67,15 @@ themeToggleBtn.addEventListener('click', () => {
 });
 
 
+//arrow test button
+
+document.getElementById("arrow-test").addEventListener("click", function(){
+    
+    window.scrollTo({
+        top: 550,
+        behavior: "smooth"
+    });
+});
 
 //partners Slider slick config
 
