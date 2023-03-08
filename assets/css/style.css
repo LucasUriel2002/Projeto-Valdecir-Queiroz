@@ -1038,6 +1038,8 @@ body.dark-theme .google-mapa {
 
 /*About Us Page*/
 
+/*About Us hero*/
+
 #abt-us.hero{
   background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
     repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
@@ -1052,10 +1054,19 @@ body.dark-theme .google-mapa {
     border-radius: 0px;
   }
 
+/*About Us config*/
 
+#abt-us.about-us .container{
+  padding: 7vh;
+  height: 630px;
+  width: 100%;
+  background: var(--secondary-background-color);
+  text-align: center;
+  overflow: hidden;
+}
 
 .history{
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-background-color);
   padding: 0 0 25px 0;
 }
 
@@ -1100,7 +1111,7 @@ body.dark-theme .google-mapa {
 .history-container{
   display: grid;
   grid-template-columns: 1fr;  
-  grid-template-rows: 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1.3fr 1fr 1fr;
   max-width: 100% ;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -1163,28 +1174,23 @@ body.dark-theme .google-mapa {
   padding-top: 20px;
 }
 
+/*Services Page*/
 
+/*Services hero*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#srvc.hero{
+  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+  url("../imgs/HD_imgs/goiaba.jpg");
+  background-size: 4px 4px;
+  background-position: bottom 0 left 0;
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 0px;
+}
 
 
 /*Contact Us Page*/
@@ -1279,7 +1285,7 @@ body.dark-theme .google-mapa {
 
 .footer-banner .banner-image{
   height: 150px;
-  background-image: url("../imgs/HD_imgs/acerola3.jpg");
+  background-image: repeating-linear-gradient(36deg, rgba(255, 253, 253, 0.1), rgba(255,255,255, 0.1) 1px, transparent 0px, transparent 2px), linear-gradient(180deg, rgba(60,47,8,0.45840334424785534) 0%, rgba(43,24,5,0.4528011033514968) 35%, rgba(43,24,5,0.4471988624551383) 100%), url("../imgs/HD_imgs/acerola3.jpg");
   background-size: cover;
   background-position: bottom -100px left 0px;
   display: flex;
