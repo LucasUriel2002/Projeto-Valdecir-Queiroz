@@ -218,6 +218,14 @@ body.dark-theme .partners h1{
   color: var(--text-dark-lighter-grey-color);
 }
 
+body.dark-theme .services h1{
+  color: white;
+}
+
+body.dark-theme .services p{
+  color: white;
+}
+
 body.dark-theme .gallery h1{
   color: white;
 }
@@ -263,6 +271,20 @@ body.dark-theme footer button{
 body.dark-theme footer button:hover{
   border: 1px solid var(--text-dark-lighter-grey-color);
   background-color: var(--dark-theme-green);
+  color: var(--text-dark-lighter-grey-color);
+}
+
+/*About-us dark theme*/
+
+body.dark-theme .contact-us h1{
+  color: var(--text-dark-lighter-grey-color);
+}
+
+body.dark-theme .contact-us h3{
+  color: var(--text-dark-lighter-grey-color);
+}
+
+body.dark-theme .mapa h1{
   color: var(--text-dark-lighter-grey-color);
 }
 
@@ -485,6 +507,8 @@ body.dark-theme footer button:hover{
 .colormenu span{
   background: #000;
 }
+
+/*Home Page*/
 
 /*Hero config*/
 
@@ -804,7 +828,7 @@ body.dark-theme footer button:hover{
   display: flex;
   align-items: center;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .txt1 {
@@ -939,6 +963,7 @@ body.dark-theme footer button:hover{
 
 /*contact us*/
 
+
 .contact-us{
   background: var(--primary-background-color);
   display: flex;
@@ -991,6 +1016,62 @@ body.dark-theme footer button:hover{
 
 .contact-us button{
   margin-top: 10px;
+}
+
+/*Contact Us Page*/
+
+/*Hero config*/
+#cont-us.hero{
+  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+    repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+    url("../imgs/HD_imgs/acerola1.jpg");
+    background-size: 4px 4px;
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom 0 left -200px; 
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/*Page config*/
+
+#cont-us.contact-us{
+  height: 1000px;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes h3{
+  padding-top: 40px;
+}
+
+.redes button{
+  width: 120px;
+  height: 40px;
+}
+
+.redes .whats{
+  background-color: #3BDD58;
+  border-radius: 15px;
+  color: var(--text-white-color);
+  width: 120px;
+  height: 60px;
+  cursor: pointer;
+  transition: ease 0.3s;
+  font-size: 15px;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 /*Footer banner config*/
