@@ -69,14 +69,18 @@ themeToggleBtn.addEventListener('click', () => {
 
 //arrow test button
 
-document.getElementById("arrow-test").addEventListener("click", function(){
-    
-    window.scrollTo({
-        top: 550,
-        behavior: "smooth"
-    });
-});
+const arrowTest = document.getElementById("arrow-test");
 
+
+if(arrowTest){
+    document.getElementById("arrow-test").addEventListener("click", function(){
+        
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth"
+        });
+    });
+}
 //partners Slider slick config
 
 $('.partners .container').slick({
@@ -195,3 +199,62 @@ $('.icon-phrases .container').slick({
             }
             }]        
     });
+
+//service page slider
+
+
+$('.image-services .container').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    focusOnCenter: true,
+    responsive: [{
+        breakpoint: 1100,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            speed: 300,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            infinite: true,
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        }
+        },
+        {
+        breakpoint: 780,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            speed: 300,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            focusOnSelect: false
+        }
+        },
+        {
+        breakpoint: 530,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            infinite: true,
+            dots: true,
+            centerMode: false,
+            focusOnSelect: false
+        }
+        }]  
+
+    });    
