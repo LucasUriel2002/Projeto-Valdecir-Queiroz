@@ -1174,45 +1174,45 @@ body.dark-theme .google-mapa {
   padding-top: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Services Page*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Services hero*/
 
@@ -1328,13 +1328,58 @@ body.dark-theme .google-mapa {
 
 
 
+/*General Services Services Page*/
+
+/*General Services Hero*/
+
+#generalServices.hero{
+  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+  url("../imgs/HD_imgs/cursos.jpg");
+  background-size: 4px 4px;
+  background-position: bottom 0 left 0;
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 0px;
+}
+
+.service-template{
+  width: 100%;
+  height: 960px;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 100px;
+}
+
+.service-template .container{
+  display: flex;
+  width: 100%;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-template .container p {
+  margin: 0 20px 0 20px;
+}
 
 
+.service-template .container h1{
+  text-align: center;
+}
 
+.service-template img{
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
+  margin: 20px;
+}
 
-
-
-
+.service-template
 
 
 
