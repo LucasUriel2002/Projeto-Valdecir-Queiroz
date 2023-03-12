@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Slider-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" class="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" class="">
@@ -44,7 +45,14 @@
               <ul class="list" id="nav">
                             <li><a class="active" href="index.html" id="text">Home</a></li>
                             <li><a href="about-us.html" id="text">Quem somos?</a></li>
-                            <li><a href="services.html" id="text">Serviços</a></li>
+                            <input type="checkbox" id="collapsible-head">
+                            <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a href="services.html" id="text"> Serviços</a></li>
+                                <ul class="services-list">
+                                    <li><a href="services/cursos.html">Cursos</a></li>
+                                    <li><a href="services/consultoria.html">Consultoria</li></a>
+                                    <li><a href="services/acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
+                                    <li><a href="services/organicoCertificado.html">Orgânico Certificado</a></li>
+                                </ul>
                             <li><a href="contact-us.html" id="text">Contatos</a></li>
                             <li><a href="#" id="text">Galeria</a></li>
                             <li><a href="#" id="text">Parceiros</a></li>
@@ -114,7 +122,7 @@
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt cum beatae reprehenderit
              commodi! Accusantium reprehenderit ipsam eos impedit debitis voluptas qui ipsa optio, </h3>
              
-        <button>Ler mais</button>    
+        <a href="about-us.html"><button>Ler mais</button></a>   
     </div>
      </section>
 
@@ -240,7 +248,7 @@
     </div>
 
 <div class="button-services">
-    <button>ver todos</button>
+    <a href="services.html"><button>Ver todos</button></a>
 </div>
     </section>
 
@@ -329,9 +337,9 @@
             <h1>Acesso Rápido</h1>
             <ul>
                 <a href="index.html"><li>Home</li></a>
-                <li>Quem somos?</li>
-                <li>Serviços</li>
-                <li>Contatos</li>
+                <a href="about-us.html"><li>Quem somos?</li></a>
+                <a href="services.html"><li>Serviços</li></a>
+                <a href="contact-us.html"><li>Contatos</li></a>
                 <li>Galeria</li>
                 <li>Parceiros</li>
             </ul>

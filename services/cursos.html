@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Slider-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" class="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" class="">
@@ -17,7 +18,7 @@
 
     </head>
 
-    <body id="#generalServices">
+    <body id="generalServices">
 
       <section id="header">
 
@@ -41,40 +42,53 @@
                     </div>
                 </div>
             </div>  
-              <ul class="list" id="nav">
-                            <li><a href="../index.html" id="text">Home</a></li>
-                            <li><a href="../about-us.html" id="text">Quem somos?</a></li>
-                            <li><a class="active" href="../services.html" id="text">Serviços</a></li>
-                            <li><a href="../contact-us.html" id="text">Contatos</a></li>
-                            <li><a href="#" id="text">Galeria</a></li>
-                            <li><a href="#" id="text">Parceiros</a></li>
-                        </ul>
+            <ul class="list" id="nav">
+                <li><a href="../index.html" id="text">Home</a></li>
+                <li><a href="../about-us.html" id="text">Quem somos?</a></li>
+                <input type="checkbox" id="collapsible-head">
+                <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a class="active" href="../services.html" id="text"> Serviços</a></li>
+                    <ul class="services-list">
+                        <li><a class="active" href="cursos.html">Cursos</a></li>
+                        <li><a href="consultoria.html">Consultoria</li></a>
+                        <li><a href="acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
+                        <li><a href="organicoCertificado.html">Orgânico Certificado</a></li>
+                    </ul>
+                <li><a href="../contact-us.html" id="text">Contatos</a></li>
+                <li><a href="#" id="text">Galeria</a></li>
+                <li><a href="#" id="text">Parceiros</a></li>
+            </ul>
         </nav>
 
-        <div id="generalServices" class="hero">
+        <div id="generalServices" class="hero cursos">
             <h1>Cursos</h1>
-            <h3></h3>
         </div>
+        </section>
 
 <section class="service-template">
 
     <div class="container">
-
-        <img src="../assets/imgs/HD_imgs/cursos2.jpg" alt="">
-
-        <h1>Cursos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae mollitia 
+        <div class="c1">
+            <h1>Aulas</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae mollitia 
             qui, quibusdam ratione hic porro nemo labore ea nesciunt molestias
              alias eum odio perspiciatis, repellat nostrum maiores totam veritatis.</p>
-        <img src="../assets/imgs/HD_imgs/cursos2.jpg" alt="">
-        <h1>Lições da Natureza</h1>
+        
+             <img src="../assets/imgs/HD_imgs/cursos2.jpg" alt="">
+        </div>
+
+        <div class="c2">
+            <h1>Lições da Natureza</h1>
             
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae mollitia 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae mollitia 
             qui, quibusdam ratione hic porro nemo labore ea nesciunt molestias
-             alias eum odio perspiciatis, repellat nostrum maiores totam veritatis.</p>    
+             alias eum odio perspiciatis, repellat nostrum maiores totam veritatis.</p> 
+        
+             <img src="../assets/imgs/HD_imgs/cursos2.jpg" alt="">
+        </div>
     </div>
 
    <br>
+    <h1>Se interessou?</h1>
     <h1>Entre em contato conosco!</h1>
     <div class="redes">
         <button class="whats"><i class="fa fa-whatsapp"></i>WhatsApp</button>
@@ -82,18 +96,18 @@
         <a href="https://linktr.ee/MadhaviNeves"><button>Redes Sociais</button></a>
         </div>
         <br>
-    <h1>Confira tambem nossos</h1>  
-    <h1>Outros Serviços</h1> 
 </section>
 
-    <section class="image-services">
+    <section id="generalServices" class="image-services">
+        
+        <h1>Confira Também Nossos</h1>  
+        <h1>Outros Serviços:</h1> 
 
         <div class="container">
-            
 
                 <div class="slider">
                     <img src="../assets/imgs/HD_imgs/acerolaMostrando.jpg" alt="">
-                    <h1>Colsultoria</h1>
+                    <h1>Consultoria</h1>
                     <a href="consultoria.html">Ver mais</a>
                 </div>
 
@@ -110,10 +124,6 @@
                 </div>        
         </div>
     </section> 
-  
-    
-
-     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>

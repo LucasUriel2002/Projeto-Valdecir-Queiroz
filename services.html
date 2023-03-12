@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Slider-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" class="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" class="">
@@ -21,35 +22,42 @@
 
       <section id="header">
 
-         <nav class="nav-container" id="nav-container">
+        <nav class="nav-container" id="nav-container">
 
-           <div id="navbar"> 
-            <a href="index.html"><img src="assets/imgs/logos/terraEco.png" class="logo"></a>
-
-                <div class="nav-icons">
-                    <div id="theme-toggle-btn">
-                        <i class="material-symbols-outlined" id="sun-icon">light_mode</i>
-                        <i class="material-symbols-outlined" id="moon-icon">dark_mode</i>
-                    </div>
-                
-                    <div class="menu" id="bar">
-                        <div>
-                            <span class="line-1"></span>
-                            <span class="line-2"></span>
-                            <span class="line-3"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-              <ul class="list" id="nav">
-                            <li><a href="index.html" id="text">Home</a></li>
-                            <li><a href="about-us.html" id="text">Quem somos?</a></li>
-                            <li><a class="active" href="services.html" id="text">Serviços</a></li>
-                            <li><a href="contact-us.html" id="text">Contatos</a></li>
-                            <li><a href="#" id="text">Galeria</a></li>
-                            <li><a href="#" id="text">Parceiros</a></li>
-                        </ul>
-        </nav>
+            <div id="navbar"> 
+             <a href="index.html"><img src="assets/imgs/logos/terraEco.png" class="logo"></a>
+ 
+                 <div class="nav-icons">
+                     <div id="theme-toggle-btn">
+                         <i class="material-symbols-outlined" id="sun-icon">light_mode</i>
+                         <i class="material-symbols-outlined" id="moon-icon">dark_mode</i>
+                     </div>
+                 
+                     <div class="menu" id="bar">
+                         <div>
+                             <span class="line-1"></span>
+                             <span class="line-2"></span>
+                             <span class="line-3"></span>
+                         </div>
+                     </div>
+                 </div>
+             </div>  
+               <ul class="list" id="nav">
+                             <li><a href="index.html" id="text">Home</a></li>
+                             <li><a href="about-us.html" id="text">Quem somos?</a></li>
+                             <input type="checkbox" id="collapsible-head">
+                             <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a class="active" href="services.html" id="text"> Serviços</a></li>
+                                 <ul class="services-list">
+                                     <li><a href="services/cursos.html">Cursos</a></li>
+                                     <li><a href="services/consultoria.html">Consultoria</li></a>
+                                     <li><a href="services/acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
+                                     <li><a href="services/organicoCertificado.html">Orgânico Certificado</a></li>
+                                 </ul>
+                             <li><a href="contact-us.html" id="text">Contatos</a></li>
+                             <li><a href="#" id="text">Galeria</a></li>
+                             <li><a href="#" id="text">Parceiros</a></li>
+                         </ul>
+         </nav>
 
         <div id="srvc" class="hero">
             <h1>Nossos Serviços</h1>
@@ -57,20 +65,24 @@
         </div>
 
      </section>
-        
 
-     <p class="services-explanation">
+    <section class="services-explanation">
+     <h1>Nosso Trabalho</h1>
+
+     <p>
 
         É certo que o mercado agricultura orgânica e sustentável vem crescendo e conseguindo vencer a forte crise que passamos neste momento e, 
         a cada dia, mais empreendedores investem no segmento, se capacitando, certificando e procurando saber como participar do mercado que mais cresce no mundo.
         Além dos alimentos serem muito mais saborosos e nutritivos todo o modo de produção é natural sem uso de agrotóxicos ou algum tipo de química.
         Favorecendo o meio ambiente e a saúde do agricultor e do consumidor. Sem contar que a produção em bases agroecológicas fornece ao agricultor um retorno de 34% acima dos produtores convencionais.
         <br>
-        <b><br>Conheça alguns de nossos serviços: </b>
 
         </p>
+    </section>
 
      <section class="image-services">
+
+        <p><b><br>Conheça alguns de nossos serviços: </b></p>
 
         <div class="container">
             
@@ -82,7 +94,7 @@
 
                 <div class="slider">
                     <img src="assets/imgs/HD_imgs/acerolaMostrando.jpg" alt="">
-                    <h1>Colsultoria</h1>
+                    <h1>Consultoria</h1>
                     <a href="services/consultoria.html">Ver mais</a>
                 </div>
 
@@ -104,6 +116,7 @@
     <section class="partners">
 
         <h1>Clientes e Parceiros</h1>
+        <p>que confiaram nos nossos serviços</p>
 
             <div class="container">
 
