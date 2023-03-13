@@ -280,6 +280,10 @@ body.dark-theme footer button:hover{
 
 /*About-us dark theme*/
 
+body.dark-theme #abt-us.hero{
+  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/IMG_2925.jpg");
+}
+
 body.dark-theme .history h1{
   color: var(--text-dark-lighter-grey-color);
 }
@@ -289,6 +293,10 @@ body.dark-theme .history p{
 }
 
 /*Contact-us dark theme*/
+
+body.dark-theme #cont-us.hero{
+  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/acerola1.jpg");
+}
 
 body.dark-theme .contact-us h1{
   color: var(--text-dark-lighter-grey-color);
@@ -314,6 +322,11 @@ body.dark-theme .google-mapa {
 }
 
 /*Services dark theme*/
+
+body.dark-theme #srvc.hero{
+  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/goiaba.jpg");
+}
+
 body.dark-theme .services-explanation{
     color: var(--text-dark-lighter-grey-color);
 }
@@ -334,7 +347,31 @@ body.dark-theme .partners p{
   color: var(--text-dark-lighter-grey-color);
 }
 
-/*Cursos dark theme*/
+/*General services dark theme*/
+
+body.dark-theme #generalServices.hero{
+  background-image: linear-gradient(180deg, rgba(0,67,255,0.2959383582534576) 0%, rgba(0,67,255,0.29873947870163686) 100%),
+  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+  url("../imgs/HD_imgs/cursos.jpg");
+}
+
+body.dark-theme #generalServices.consultoria{
+  background-image: linear-gradient(180deg, rgba(0,67,255,0.2959383582534576) 0%, rgba(0,67,255,0.29873947870163686) 100%),
+  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+  url("../imgs/HD_imgs/acerolaMostrando.jpg");
+}
+
+body.dark-theme #generalServices.acessoria{
+  background-image: linear-gradient(180deg, rgba(0,67,255,0.2959383582534576) 0%, rgba(0,67,255,0.29873947870163686) 100%),
+  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+  url("../imgs/HD_imgs/notebook.jpg");
+}
+
+body.dark-theme #generalServices.certificado{
+  background-image: linear-gradient(180deg, rgba(0,67,255,0.2959383582534576) 0%, rgba(0,67,255,0.29873947870163686) 100%),
+  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+  url("../imgs/HD_imgs/certificado.jpg");
+}
 
 body.dark-theme .service-template h1{
   color: var(--text-dark-lighter-grey-color);
@@ -342,6 +379,18 @@ body.dark-theme .service-template h1{
 
 body.dark-theme .service-template p{
   color: var(--text-dark-lighter-grey-color);
+}
+
+/*Gallery dark theme*/
+
+body.dark-theme #gal.hero{
+  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/12697414_1263341080359760_359460311908228984_o.jpg");
+}
+
+/*Partners dark theme*/
+
+body.dark-theme #part.hero{
+  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/logos/terraEco.png");
 }
 
 /* Theme button config */
@@ -1385,7 +1434,7 @@ ul input:checked ~ .services-list {
 /*General Services Hero*/
 
 #generalServices.hero{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+  background-image: linear-gradient(180deg, rgba(161,255,0,0.3015405991498161) 0%, rgba(161,255,0,0.29873947870163686) 100%),
   repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
   url("../imgs/HD_imgs/cursos.jpg");
   background-size: 4px 4px;
@@ -1399,7 +1448,7 @@ ul input:checked ~ .services-list {
 }
 
 #generalServices.consultoria{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+  background-image: linear-gradient(180deg, rgba(161,255,0,0.3015405991498161) 0%, rgba(161,255,0,0.29873947870163686) 100%), 
   repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
   url("../imgs/HD_imgs/acerolaMostrando.jpg");
   background-position: bottom -150px left 0;
@@ -1410,7 +1459,7 @@ ul input:checked ~ .services-list {
 }
 
 #generalServices.acessoria{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+  background-image: linear-gradient(180deg, rgba(161,255,0,0.3015405991498161) 0%, rgba(161,255,0,0.29873947870163686) 100%), 
   repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
   url("../imgs/HD_imgs/notebook.jpg");
   height: 15vh;
@@ -1421,7 +1470,7 @@ ul input:checked ~ .services-list {
 }
 
 #generalServices.certificado{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+  background-image: linear-gradient(180deg, rgba(161,255,0,0.3015405991498161) 0%, rgba(161,255,0,0.29873947870163686) 100%), 
   repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
   url("../imgs/HD_imgs/certificado.jpg");
   height: 15vh;
@@ -1515,7 +1564,7 @@ ul input:checked ~ .services-list {
   font-size: 15px;
 }
 
-.redes .whats{
+.whats{
   background-color: #3BDD58;
   border-radius: 30px;
   color: var(--text-white-color);
@@ -1536,6 +1585,42 @@ ul input:checked ~ .services-list {
 
 .mapa h1 {
   padding-top: 20px;
+}
+
+/*Gallery Page*/
+
+/*Hero config*/
+
+#gal.hero{
+  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+  url("../imgs/HD_imgs/12697414_1263341080359760_359460311908228984_o.jpg");
+  background-size: 4px 4px;
+  background-position: bottom 0 left 0;
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 0px;
+}
+
+/*Partners Page*/
+
+/*Hero config*/
+
+#part.hero{
+  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
+  url("../imgs/logos/terraEco.png");
+  background-size: 4px 4px;
+  background-position: bottom 0px left 0;
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 0px;
 }
 
 /*Footer banner config*/
@@ -1566,7 +1651,7 @@ ul input:checked ~ .services-list {
 
 .footer-banner .banner-image{
   height: 150px;
-  background-image: repeating-linear-gradient(36deg, rgba(255, 253, 253, 0.1), rgba(255,255,255, 0.1) 1px, transparent 0px, transparent 2px), linear-gradient(180deg, rgba(60,47,8,0.45840334424785534) 0%, rgba(43,24,5,0.4528011033514968) 35%, rgba(43,24,5,0.4471988624551383) 100%), url("../imgs/HD_imgs/acerola3.jpg");
+  background-image: url("../imgs/HD_imgs/acerola3efeito.png");
   background-size: cover;
   background-position: bottom -100px left 0px;
   display: flex;
