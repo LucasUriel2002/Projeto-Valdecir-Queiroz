@@ -1645,8 +1645,9 @@ ul input:checked ~ .services-list {
   width: 80px;
 }
 
-.footer-banner h1{
+.footer-banner h3{
   color: white;
+  font-size: 15pt;
 }
 
 .footer-banner .banner-image{

@@ -1,170 +1,176 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <!--Basic settings-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1">
+        <!--Page Customization-->
         <title>Valdecir Queiroz</title>
+        <!--Styling-->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!--Icon Library-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Slider-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" class="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" class="">
-        <!-- teste -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
 
     </head>
 
     <body>
 
-      <section id="header">
+      <!--Navbar + hero-->
+        <section id="header">
 
-        <nav class="nav-container" id="nav-container">
+            <nav class="nav-container" id="nav-container">
 
-            <div id="navbar"> 
-             <a href="index.html"><img src="assets/imgs/logos/terraEco.png" class="logo"></a>
+                <!--Top navbar-->
+                <div id="navbar"> 
+                    <a href="index.html"><img src="assets/imgs/logos/terraEco.png" class="logo"></a>
  
-                 <div class="nav-icons">
-                     <div id="theme-toggle-btn">
-                         <i class="material-symbols-outlined" id="sun-icon">light_mode</i>
-                         <i class="material-symbols-outlined" id="moon-icon">dark_mode</i>
-                     </div>
+                    <div class="nav-icons">
+                        <div id="theme-toggle-btn">
+                            <i class="material-symbols-outlined" id="sun-icon">light_mode</i>
+                            <i class="material-symbols-outlined" id="moon-icon">dark_mode</i>
+                        </div>
                  
-                     <div class="menu" id="bar">
-                         <div>
-                             <span class="line-1"></span>
-                             <span class="line-2"></span>
-                             <span class="line-3"></span>
-                         </div>
-                     </div>
-                 </div>
-             </div>  
-               <ul class="list" id="nav">
-                             <li><a href="index.html" id="text">Home</a></li>
-                             <li><a class="active" href="about-us.html" id="text">Quem somos?</a></li>
-                             <input type="checkbox" id="collapsible-head">
-                             <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a href="services.html" id="text"> Serviços</a></li>
-                                 <ul class="services-list">
-                                     <li><a href="services/cursos.html">Cursos</a></li>
-                                     <li><a href="services/consultoria.html">Consultoria</li></a>
-                                     <li><a href="services/acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
-                                     <li><a href="services/organicoCertificado.html">Orgânico Certificado</a></li>
-                                 </ul>
-                             <li><a href="contact-us.html" id="text">Contatos</a></li>
-                             <li><a href="gallery.html" id="text">Galeria</a></li>
-                             <li><a href="partners.html" id="text">Parceiros</a></li>
-                         </ul>
-         </nav>
+                        <!--Collapsing icon-->
+                        <div class="menu" id="bar">
+                            <div>
+                                <span class="line-1"></span>
+                                <span class="line-2"></span>
+                                <span class="line-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
 
-        <div id="abt-us" class="hero">
-            <h1>Valdecir Queiroz</h1>
-            <h3>Nossa historia</h3>
-        </div>
+                <!--Collapsible Side navbar-->
+                <ul class="list" id="nav">
+                    <li><a href="index.html" id="text">Home</a></li>
+                    <!--Active class stands for current page-->
+                    <li><a class="active" href="about-us.html" id="text">Quem somos?</a></li>
+                    <!--Checkbox collapses the sub-page section-->
+                    <input type="checkbox" id="collapsible-head">
+                    <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a href="services.html" id="text"> Serviços</a></li>
+                        <!--Sub-page section-->
+                        <ul class="services-list">
+                            <li><a href="services/cursos.html">Cursos</a></li>
+                            <li><a href="services/consultoria.html">Consultoria</li></a>
+                            <li><a href="services/acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
+                            <li><a href="services/organicoCertificado.html">Orgânico Certificado</a></li>
+                        </ul>
+                    <li><a href="contact-us.html" id="text">Contatos</a></li>
+                    <li><a href="gallery.html" id="text">Galeria</a></li>
+                    <li><a href="partners.html" id="text">Parceiros</a></li>
+                </ul>
+            </nav>
 
-     </section>
+            <div id="abt-us" class="hero">
+                <h1>Valdecir Queiroz</h1>
+                <h3>Nossa historia</h3>
+            </div>
 
-     <section id="abt-us" class="about-us"> 
-        <div class="container">
-        <h1>Quem somos?</h1>
-        <div class="image">   
-        <img src="assets/imgs/HD_imgs/about-us.jpg" alt="" class="">
-        </div> 
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt cum beatae reprehenderit
-             commodi! Accusantium reprehenderit ipsam eos impedit debitis voluptas qui ipsa optio, </h3> 
-    </div>
+        </section>
 
+        <!--Quick company summary-->
+        <section id="abt-us" class="about-us"> 
+            <div class="container">
+                <h1>Quem somos?</h1>
+                
+                <div class="image">   
+                    <img src="assets/imgs/HD_imgs/about-us.jpg" alt="" class="">
+                </div>
 
-    <section class="history">
-    <h1>Nossa história</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt cum beatae reprehenderit
+                commodi! Accusantium reprehenderit ipsam eos impedit debitis voluptas qui ipsa optio, </h3> 
+            </div>
+        </section>
 
-    <div class="history-container">
-            
-        <div class="history-image-container history-item-1">
+        <!--Company full story-->
+        <section class="history">
+            <h1>Nossa história</h1>
 
-        <img class="history-image" src="assets/imgs/HD_imgs/IMG_2966.jpg" alt="">
-        </div>
+            <div class="history-container">
+                
+                <!--itens 1-4 and 10 include pictures-->
+                <div class="history-image-container history-item-1">
+                    <img class="history-image" src="assets/imgs/HD_imgs/IMG_2966.jpg" alt="">
+                </div>
+    
+                <div class="history-image-container history-item-2">
+                    <img class="history-image" src="assets/imgs/HD_imgs/IMG_2925.jpg" alt="">
+                </div>    
+
+                <div class="history-image-container history-item-3">
+                    <img class="history-image" src="assets/imgs/HD_imgs/IMG_2959.jpg" alt="">
+                </div>
+
+                <div class="history-image-container history-item-4">
+                    <img class="history-image" src="assets/imgs/HD_imgs/acerola2.jpg" alt="">
+                </div>
+
+                <div class="history-image-container history-item-10">
+                    <img class="history-image" src="assets/imgs/HD_imgs/IMG_2925.jpg" alt="">
+                </div>    
+
+                <!--itens 5-9 include text-->
+                <div class="history-image-container history-item-5">
+                    <div class="history-text history-text-1">
+                        <p>Em 1998, através do curso de agricultura orgânica em São Paulo, Valdecir Queiroz inicia seu trabalho na agricultura orgânica. No ano posterior em um curso de Agricultura Biodinâmica em Fortaleza realizada pelo instituto Elo de São Paulo, Valdecir decide trabalhar somente com a agricultura orgânica.</p>
+                    </div>
+                </div>
+
+                <div class="history-image-container history-item-6">
+                    <div class="history-text history-text-2">
+                        <p>Após essa decisão de abandonar a agricultura química, em 2004 Valdecir inicia seu empreendimento abrindo a Terra Ecológica, empresa de consultoria orgânica onde prestou serviço a várias empresas.</p>     
+                    </div>
+                </div>
+
+                <div class="history-image-container history-item-7">
+                    <div class="history-text history-text-1">
+                        <p>No longo desses 14 anos, Valdecir Queiroz ministrou mais de 100 cursos de agricultura orgânica no Norte e Nordeste brasileiro, bem como esteve a frente de vários projetos e consultorias.</p>
+                    </div>
+                </div>
         
-        <div class="history-image-container history-item-2">
-        <img class="history-image" src="assets/imgs/HD_imgs/IMG_2925.jpg" alt="">
-        </div>    
+                <div class="history-image-container history-item-8">
+                    <div class="history-text history-text-2">
+                        <p>Valdecir Queiroz é especialista em consultoria, capacitação, projetos, cursos em agricultura orgânica e biodinâmica, áreas de pesquisa, certificação, produção, comercialização, ensino e extensão na cadeia de produção de alimentos orgânicos no Brasil e exterior</p>
+                    </div>
+                </div> 
 
-        <div class="history-image-container history-item-3">
-        <img class="history-image" src="assets/imgs/HD_imgs/IMG_2959.jpg" alt="">
-        </div>
-
-        <div class="history-image-container history-item-4">
-        <img class="history-image" src="assets/imgs/HD_imgs/acerola2.jpg" alt="">
-        </div>
-
-        <div class="history-image-container history-item-10">
-            <img class="history-image" src="assets/imgs/HD_imgs/IMG_2925.jpg" alt="">
-            </div>    
-
-        <div class="history-image-container history-item-5">
-            <div class="history-text history-text-1">
-                    <p>Em 1998, através do curso de agricultura orgânica em São Paulo, Valdecir Queiroz inicia seu trabalho na agricultura orgânica. No ano posterior em um curso de Agricultura Biodinâmica em Fortaleza realizada pelo instituto Elo de São Paulo, Valdecir decide trabalhar somente com a agricultura orgânica.</p>
-                </div>
+                <div class="history-image-container history-item-9">
+                    <div class="history-text history-text-1">
+                        <p>Com o objetivo de difundir as práticas agrícolas sustentáveis aos pequenos, médios e grandes produtores, hoje, Valdecir Queiroz se destaca atendendo grandes empresas e firmando parcerias importantes de nível nacional e internacional</p>
+                    </div>
+                </div>         
             </div>
+        </section>
 
-         <div class="history-image-container history-item-6">
-            <div class="history-text history-text-2">
-           
-                    <p>Após essa decisão de abandonar a agricultura química, em 2004 Valdecir inicia seu empreendimento abrindo a Terra Ecológica, empresa de consultoria orgânica onde prestou serviço a várias empresas.</p>
-                   
-                </div>
-            </div>
-
-         <div class="history-image-container history-item-7">
-            <div class="history-text history-text-1">
-           
-                    <p>No longo desses 14 anos, Valdecir Queiroz ministrou mais de 100 cursos de agricultura orgânica no Norte e Nordeste brasileiro, bem como esteve a frente de vários projetos e consultorias.</p>
-                    
-                </div>
-            </div>
-            
-         <div class="history-image-container history-item-8">
-            <div class="history-text history-text-2">
-
-                    <p>Valdecir Queiroz é especialista em consultoria, capacitação, projetos, cursos em agricultura orgânica e biodinâmica, áreas de pesquisa, certificação, produção, comercialização, ensino e extensão na cadeia de produção de alimentos orgânicos no Brasil e exterior</p>
-                    
-                </div>
-            </div> 
-
-         <div class="history-image-container history-item-9">
-            <div class="history-text history-text-1">
-
-                    <p>Com o objetivo de difundir as práticas agrícolas sustentáveis aos pequenos, médios e grandes produtores, hoje, Valdecir Queiroz se destaca atendendo grandes empresas e firmando parcerias importantes de nível nacional e internacional</p>
-                    
-                </div>
-            </div>         
-        </div>
-    </section>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-     <script src="assets/js/script.js"></script>
+        <!--Sliders script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <!--Javascript import-->
+        <script src="assets/js/script.js"></script>
      
     </body>
     
+    <!--Footer top image-->
     <section class="footer-banner">
-        <!-- <div class="banner-logo">
-            <img src="assets/imgs/logos/terraEco.png">
-            <h1>Valdecir Queiroz</h1>
-        </div> -->
+        <!--div for setting the background image on CSS-->
         <div class="banner-image">
+            <h3>Conheça nossa empresa!</h3>
+            <button>Clique aqui</button>
         </div>
     </section>
 
     <footer>
-        <div class="banner"></div>
-
         <div class="resumo">
             <h1>Valdecir Queiroz</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem qui quod accusantium modi dolores numquam praesentium eligendi 
-                quisquam distinctio! Qui officiis illum ut, nulla eum cumque consequatur quaerat quo?</p>
+            quisquam distinctio! Qui officiis illum ut, nulla eum cumque consequatur quaerat quo?</p>
         </div>
 
         <div class="acesso">
@@ -181,6 +187,7 @@
 
         <div class="fale">
             <h1>Fale Conosco</h1>
+            <!--E-mail direct send-->
             <form action="https://formsubmit.co/madhavi.neves@gmail.com" method="POST">
                 <textarea class="ta-1" type="email" name="email" cols="12" rows="1" placeholder="Seu e-mail" required></textarea>
                 <br>
