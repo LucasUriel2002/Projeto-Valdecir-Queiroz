@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <!--Basic settings-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1">
+        <!--Page Customization-->
         <title>Valdecir Queiroz</title>
+        <!--Styling-->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!--Icon Library-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Slider-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" class="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" class="">
-        <!-- teste -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
 
     </head>
 
     <body>
 
-      <section id="header">
+        <!--Navbar + hero-->
+        <section id="header">
 
-        <nav class="nav-container" id="nav-container">
+            <nav class="nav-container" id="nav-container">
 
-            <div id="navbar"> 
-             <a href="index.html"><img src="assets/imgs/logos/terraEco.png" class="logo"></a>
- 
-                 <div class="nav-icons">
-                     <div id="theme-toggle-btn">
-                         <i class="material-symbols-outlined" id="sun-icon">light_mode</i>
-                         <i class="material-symbols-outlined" id="moon-icon">dark_mode</i>
-                     </div>
-                 
-                     <div class="menu" id="bar">
-                         <div>
-                             <span class="line-1"></span>
-                             <span class="line-2"></span>
-                             <span class="line-3"></span>
-                         </div>
-                     </div>
-                 </div>
-             </div>  
-               <ul class="list" id="nav">
-                             <li><a href="index.html" id="text">Home</a></li>
-                             <li><a href="about-us.html" id="text">Quem somos?</a></li>
-                             <input type="checkbox" id="collapsible-head">
-                             <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a class="active" href="services.html" id="text"> Serviços</a></li>
-                                 <ul class="services-list">
-                                     <li><a href="services/cursos.html">Cursos</a></li>
-                                     <li><a href="services/consultoria.html">Consultoria</li></a>
-                                     <li><a href="services/acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
-                                     <li><a href="services/organicoCertificado.html">Orgânico Certificado</a></li>
-                                 </ul>
-                             <li><a href="contact-us.html" id="text">Contatos</a></li>
-                             <li><a href="gallery.html" id="text">Galeria</a></li>
-                             <li><a href="partners.html" id="text">Parceiros</a></li>
-                         </ul>
-         </nav>
+                <!--Top navbar-->
+                <div id="navbar"> 
+                    <a href="index.html"><img src="assets/imgs/logos/terraEco.png" class="logo"></a>
+    
+                    <div class="nav-icons">
+                        <div id="theme-toggle-btn">
+                            <i class="material-symbols-outlined" id="sun-icon">light_mode</i>
+                            <i class="material-symbols-outlined" id="moon-icon">dark_mode</i>
+                        </div>
+                        
+                        <!--Collapsing icon-->
+                        <div class="menu" id="bar">
+                            <div>
+                                <span class="line-1"></span>
+                                <span class="line-2"></span>
+                                <span class="line-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
 
-        <div id="srvc" class="hero">
-            <h1>Nossos Serviços</h1>
-            <h3>Como podemos lhe ajudar?</h3>
-        </div>
+                <!--Collapsible Side navbar-->
+                <ul class="list" id="nav">
+                    <li><a href="index.html" id="text">Home</a></li>
+                    <li><a href="about-us.html" id="text">Quem somos?</a></li>
+                    <!--Checkbox collapses the sub-page section-->
+                    <input type="checkbox" id="collapsible-head">
+                    <!--Active class stands for current page-->
+                    <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a class="active" href="services.html" id="text"> Serviços</a></li>
+                        <!--Sub-page section-->
+                        <ul class="services-list">
+                            <li><a href="services/cursos.html">Cursos</a></li>
+                            <li><a href="services/consultoria.html">Consultoria</li></a>
+                            <li><a href="services/acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
+                            <li><a href="services/organicoCertificado.html">Orgânico Certificado</a></li>
+                        </ul>
+                    <li><a href="contact-us.html" id="text">Contatos</a></li>
+                    <li><a href="gallery.html" id="text">Galeria</a></li>
+                    <li><a href="partners.html" id="text">Parceiros</a></li>
+                </ul>
+            </nav>
 
-     </section>
+            <div id="srvc" class="hero">
+                <h1>Nossos Serviços</h1>
+                <h3>Como podemos lhe ajudar?</h3>
+            </div>
 
-    <section class="services-explanation">
-     <h1>Nosso Trabalho</h1>
+        </section>
 
-     <p>
+        <!--Services summary-->
+        <section class="services-explanation">
+            <h1>Nosso Trabalho</h1>
 
-        É certo que o mercado agricultura orgânica e sustentável vem crescendo e conseguindo vencer a forte crise que passamos neste momento e, 
-        a cada dia, mais empreendedores investem no segmento, se capacitando, certificando e procurando saber como participar do mercado que mais cresce no mundo.
-        Além dos alimentos serem muito mais saborosos e nutritivos todo o modo de produção é natural sem uso de agrotóxicos ou algum tipo de química.
-        Favorecendo o meio ambiente e a saúde do agricultor e do consumidor. Sem contar que a produção em bases agroecológicas fornece ao agricultor um retorno de 34% acima dos produtores convencionais.
-        <br>
+            <p>
+                É certo que o mercado agricultura orgânica e sustentável vem crescendo e conseguindo vencer a forte crise que passamos neste momento e, 
+                a cada dia, mais empreendedores investem no segmento, se capacitando, certificando e procurando saber como participar do mercado que mais cresce no mundo.
+                Além dos alimentos serem muito mais saborosos e nutritivos todo o modo de produção é natural sem uso de agrotóxicos ou algum tipo de química.
+                Favorecendo o meio ambiente e a saúde do agricultor e do consumidor. Sem contar que a produção em bases agroecológicas fornece ao agricultor um retorno de 34% acima dos produtores convencionais.
+                <br>
+            </p>
+        </section>
 
-        </p>
-    </section>
+        <!--General Services pages links-->
+        <section class="image-services">
 
-     <section class="image-services">
+            <p><b><br>Conheça alguns de nossos serviços: </b></p>
 
-        <p><b><br>Conheça alguns de nossos serviços: </b></p>
-
-        <div class="container">
+            <div class="container">
             
+                <!--Each slider contains the picture + general service link-->
                 <div class="slider">
                     <img src="assets/imgs/HD_imgs/cursos2.jpg" alt="">
                     <h1>Cursos</h1>
@@ -109,17 +119,18 @@
                     <h1>Orgânico Certificado</h1>
                     <a href="services/organicoCertificado.html">Ver mais</a>
                 </div>        
-        </div>
-    </section> 
+            </div>
+        </section> 
 
+        <!--Partners page sample and link-->
+        <section class="partners">
 
-    <section class="partners">
-
-        <h1>Clientes e Parceiros</h1>
-        <p>que confiaram nos nossos serviços</p>
+            <h1>Clientes e Parceiros</h1>
+            <p>que confiaram nos nossos serviços</p>
 
             <div class="container">
 
+                <!--Each slider presents a logo-->
                 <div class="slider">
                     <img src="assets/imgs/logos/clientes/logo_clientes (36).png" alt="">
                 </div>
@@ -127,6 +138,7 @@
                 <div class="slider">
                     <img src="assets/imgs/logos/clientes/logo_clientes (26).png" alt="">
                 </div>
+
                 <div class="slider">
                     <img src="assets/imgs/logos/clientes/logo_clientes  (1).png" alt="">
                 </div>
@@ -166,35 +178,34 @@
                 <div class="slider">
                     <img src="assets/imgs/logos/clientes/logo_clientes (31).png" alt="">
                 </div>
-                
-
-        </div>
+            </div>
         
-        <button class="client-btn">Mais clientes</button> 
+            <button class="client-btn">Mais clientes</button> 
 
-     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="assets/js/script.js"></script>
+        </section>
+
+        <!--Sliders script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <!--Javascript import-->
+        <script src="assets/js/script.js"></script>
     
     </body>
     
+    <!--Footer top image-->
     <section class="footer-banner">
-        <!-- <div class="banner-logo">
-            <img src="assets/imgs/logos/terraEco.png">
-            <h1>Valdecir Queiroz</h1>
-        </div> -->
+        <!--div for setting the background image on CSS-->
         <div class="banner-image">
+            <h3>Conheça nossa empresa!</h3>
+            <button>Clique aqui</button>
         </div>
     </section>
 
     <footer>
-        <div class="banner"></div>
-
         <div class="resumo">
             <h1>Valdecir Queiroz</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem qui quod accusantium modi dolores numquam praesentium eligendi 
-                quisquam distinctio! Qui officiis illum ut, nulla eum cumque consequatur quaerat quo?</p>
+            quisquam distinctio! Qui officiis illum ut, nulla eum cumque consequatur quaerat quo?</p>
         </div>
 
         <div class="acesso">
@@ -211,6 +222,7 @@
 
         <div class="fale">
             <h1>Fale Conosco</h1>
+            <!--E-mail direct send-->
             <form action="https://formsubmit.co/madhavi.neves@gmail.com" method="POST">
                 <textarea class="ta-1" type="email" name="email" cols="12" rows="1" placeholder="Seu e-mail" required></textarea>
                 <br>
@@ -222,6 +234,3 @@
            </form> 
         </div>
     </footer>
-
-    
-

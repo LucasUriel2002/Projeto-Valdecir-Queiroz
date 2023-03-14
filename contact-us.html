@@ -1,154 +1,164 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <!--Basic settings-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1">
+        <!--Page Customization-->
         <title>Valdecir Queiroz</title>
+        <!--Styling-->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!--Icon Library-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Slider-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" class="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" class="">
-        <!-- teste -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
 
     </head>
 
     <body>
 
-      <section id="header">
+        <!--Navbar + hero-->
+        <section id="header">
 
-        <nav class="nav-container" id="nav-container">
+            <nav class="nav-container" id="nav-container">
 
-            <div id="navbar"> 
-             <a href="index.html"><img src="assets/imgs/logos/terraEco.png" class="logo"></a>
- 
-                 <div class="nav-icons">
-                     <div id="theme-toggle-btn">
-                         <i class="material-symbols-outlined" id="sun-icon">light_mode</i>
-                         <i class="material-symbols-outlined" id="moon-icon">dark_mode</i>
-                     </div>
-                 
-                     <div class="menu" id="bar">
-                         <div>
-                             <span class="line-1"></span>
-                             <span class="line-2"></span>
-                             <span class="line-3"></span>
-                         </div>
-                     </div>
-                 </div>
-             </div>  
-               <ul class="list" id="nav">
-                             <li><a href="index.html" id="text">Home</a></li>
-                             <li><a href="about-us.html" id="text">Quem somos?</a></li>
-                             <input type="checkbox" id="collapsible-head">
-                             <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a href="services.html" id="text"> Serviços</a></li>
-                                 <ul class="services-list">
-                                     <li><a href="services/cursos.html">Cursos</a></li>
-                                     <li><a href="services/consultoria.html">Consultoria</li></a>
-                                     <li><a href="services/acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
-                                     <li><a href="services/organicoCertificado.html">Orgânico Certificado</a></li>
-                                 </ul>
-                             <li><a class="active" href="contact-us.html" id="text">Contatos</a></li>
-                             <li><a href="gallery.html" id="text">Galeria</a></li>
-                             <li><a href="partners.html" id="text">Parceiros</a></li>
-                         </ul>
-         </nav>
-
-        <div id="cont-us" class="hero">
-            <h1>Fale conosco!</h1>
-            <h3>Contatos e escritório</h3>
-        </div>
-
-     </section>
-
+                <!--Top navbar-->
+                <div id="navbar"> 
+                    <a href="index.html"><img src="assets/imgs/logos/terraEco.png" class="logo"></a>
     
-     <section id="cont-us" class="contact-us">
+                    <div class="nav-icons">
+                        <div id="theme-toggle-btn">
+                            <i class="material-symbols-outlined" id="sun-icon">light_mode</i>
+                            <i class="material-symbols-outlined" id="moon-icon">dark_mode</i>
+                        </div>
+                    
+                        <!--Collapsing icon-->
+                        <div class="menu" id="bar">
+                            <div>
+                                <span class="line-1"></span>
+                                <span class="line-2"></span>
+                                <span class="line-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <h1>Informações</h1>
+                <!--Collapsible Side navbar-->
+                <ul class="list" id="nav">
+                    <li><a href="index.html" id="text">Home</a></li>
+                    <li><a href="about-us.html" id="text">Quem somos?</a></li>
+                    <!--Checkbox collapses the sub-page section-->
+                    <input type="checkbox" id="collapsible-head">
+                    <li><label for="collapsible-head"><i class="fa fa-sort-down"></i></label><a href="services.html" id="text"> Serviços</a></li>
+                        <!--Sub-page section-->
+                        <ul class="services-list">
+                            <li><a href="services/cursos.html">Cursos</a></li>
+                            <li><a href="services/consultoria.html">Consultoria</li></a>
+                            <li><a href="services/acessoriaEmpresarial.html">Acessoria Empresarial</a></li>
+                            <li><a href="services/organicoCertificado.html">Orgânico Certificado</a></li>
+                        </ul>
+                    <!--Active class stands for current page-->
+                    <li><a class="active" href="contact-us.html" id="text">Contatos</a></li>
+                    <li><a href="gallery.html" id="text">Galeria</a></li>
+                    <li><a href="partners.html" id="text">Parceiros</a></li>
+                </ul>
+            </nav>
 
-        <div class="services-item service-top">
-            <i class="material-symbols-outlined house-icon">house</i>
-            <h2>Endereço</h2>
-            <h2>Rua Vital Brasil,
-            398 - Areia Branca,
-            Petrolina-PE</h2>
-        </div>
-        <div class="services-item">
-            <i class="material-symbols-outlined phone-icon">phone</i>
-            <h2>Telefone</h2>
-            <h2>87-996380012</h2>
-        </div>
-        <div class="services-item">
-            <i class="material-symbols-outlined phone-icon">email</i>
-            <h2>E-mail</h2>
-            <h2>keiroz33@gmail.com</h2>
-        </div>
-        <h3>Entre diretamente em contato por</h3>
+            <div id="cont-us" class="hero">
+                <h1>Fale conosco!</h1>
+                <h3>Contatos e escritório</h3>
+            </div>
 
-        <div class="redes">
-        <button class="whats"><i class="fa fa-whatsapp"></i> WhatsApp</button>
-        <p>ou</p>
-        <a href="https://linktr.ee/MadhaviNeves"><button>Redes Sociais</button></a>
-        </div>
+        </section>
+
+        <!--Contacts and adress information + social media links-->
+        <section id="cont-us" class="contact-us">
+
+            <h1>Informações</h1>
+
+            <!--Info containers-->
+            <div class="services-item service-top">
+                <i class="material-symbols-outlined house-icon">house</i>
+                <h2>Endereço</h2>
+                <h2>Rua Vital Brasil,
+                398 - Areia Branca,
+                Petrolina-PE</h2>
+            </div>
+            <div class="services-item">
+                <i class="material-symbols-outlined phone-icon">phone</i>
+                <h2>Telefone</h2>
+                <h2>87-996380012</h2>
+            </div>
+            <div class="services-item">
+                <i class="material-symbols-outlined phone-icon">email</i>
+                <h2>E-mail</h2>
+                <h2>keiroz33@gmail.com</h2>
+            </div>
+
+            <h3>Entre diretamente em contato por</h3>
+            <!--Social medias link button-->
+            <div class="redes">
+                <button class="whats"><i class="fa fa-whatsapp"></i> WhatsApp</button>
+                <p>ou</p>
+                <a href="https://linktr.ee/MadhaviNeves"><button>Redes Sociais</button></a>
+            </div>
         
-     </section>
+        </section>
 
-     <section class="mapa">
-        <h1>Localização</h1>
-        <iframe class="google-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.4391550081527!2d-40.5070899!3d-9.382797599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x773707bf1b7dd5d%3A0xbc79ae61aaf77ff!2sR.%20Grande%20Otelo%2C%20230%20-%20Km-2%2C%20Petrolina%20-%20PE%2C%2056306-810!5e0!3m2!1spt-BR!2sbr!4v1678283339137!5m2!1spt-BR!2sbr" width="100%" height="450vw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </section>
-     <script src="assets/js/script.js"></script>
+        <!--Adress map iframe section-->
+        <section class="mapa">
+            <h1>Localização</h1>
+            <iframe class="google-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.4391550081527!2d-40.5070899!3d-9.382797599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x773707bf1b7dd5d%3A0xbc79ae61aaf77ff!2sR.%20Grande%20Otelo%2C%20230%20-%20Km-2%2C%20Petrolina%20-%20PE%2C%2056306-810!5e0!3m2!1spt-BR!2sbr!4v1678283339137!5m2!1spt-BR!2sbr" width="100%" height="450vw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    
+        <!--Javascript import-->
+        <script src="assets/js/script.js"></script>
    
     </body>
     
-    <section class="footer-banner">
-        <!-- <div class="banner-logo">
-            <img src="assets/imgs/logos/terraEco.png">
-            <h1>Valdecir Queiroz</h1>
-        </div> -->
-        <div class="banner-image">
-        </div>
-    </section>
+<!--Footer top image-->
+<section class="footer-banner">
+    <!--div for setting the background image on CSS-->
+    <div class="banner-image">
+        <h3>Conheça nossa empresa!</h3>
+        <button>Clique aqui</button>
+    </div>
+</section>
 
-    <footer>
-        <div class="banner"></div>
+<footer>
+    <div class="resumo">
+        <h1>Valdecir Queiroz</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem qui quod accusantium modi dolores numquam praesentium eligendi 
+        quisquam distinctio! Qui officiis illum ut, nulla eum cumque consequatur quaerat quo?</p>
+    </div>
 
-        <div class="resumo">
-            <h1>Valdecir Queiroz</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem qui quod accusantium modi dolores numquam praesentium eligendi 
-                quisquam distinctio! Qui officiis illum ut, nulla eum cumque consequatur quaerat quo?</p>
-        </div>
+    <div class="acesso">
+        <h1>Acesso Rápido</h1>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="about-us.html"><li>Quem somos?</li></a>
+            <a href="services.html"><li>Serviços</li></a>
+            <a href="contact-us.html"><li>Contatos</li></a>
+            <li>Galeria</li>
+            <li>Parceiros</li>
+        </ul>
+    </div>
 
-        <div class="acesso">
-            <h1>Acesso Rápido</h1>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="about-us.html"><li>Quem somos?</li></a>
-                <a href="services.html"><li>Serviços</li></a>
-                <a href="contact-us.html"><li>Contatos</li></a>
-                <li>Galeria</li>
-                <li>Parceiros</li>
-            </ul>
-        </div>
-
-        <div class="fale">
-            <h1>Fale Conosco</h1>
-            <form action="https://formsubmit.co/madhavi.neves@gmail.com" method="POST">
-                <textarea class="ta-1" type="email" name="email" cols="12" rows="1" placeholder="Seu e-mail" required></textarea>
-                <br>
-                <br>
-                <textarea class="ta-2" type="text" name="texto" cols="18" rows="10" placeholder="Sua mensagem" required></textarea>
-                <br>
-                <br>
-                <button type="submit">Enviar</button>
-           </form> 
-        </div>
-    </footer>
-
-    
-
+    <div class="fale">
+        <h1>Fale Conosco</h1>
+        <!--E-mail direct send-->
+        <form action="https://formsubmit.co/madhavi.neves@gmail.com" method="POST">
+            <textarea class="ta-1" type="email" name="email" cols="12" rows="1" placeholder="Seu e-mail" required></textarea>
+            <br>
+            <br>
+            <textarea class="ta-2" type="text" name="texto" cols="18" rows="10" placeholder="Sua mensagem" required></textarea>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+       </form> 
+    </div>
+</footer>
