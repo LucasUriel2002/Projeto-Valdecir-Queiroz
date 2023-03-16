@@ -393,6 +393,14 @@ body.dark-theme #part.hero{
   background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/logos/terraEco.png");
 }
 
+body.dark-theme .all-partners h1{
+  color: var(--text-dark-lighter-grey-color);
+}
+
+body.dark-theme .all-partners .parceiros h1{
+  color: var(--text-white-color);
+}
+
 /* Theme button config */
 
 #moon-icon {
@@ -1623,26 +1631,52 @@ ul input:checked ~ .services-list {
   border-radius: 0px;
 }
 
+/*Partners page config*/
+.all-partners{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vw;
+}
+
+.all-partners .clientes{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8vw;
+}
+
+.all-partners .clientes img{
+  margin-bottom: 5vw;
+}
+
+.all-partners .parceiros{
+  padding-top: 10vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-background-color);
+}
+
+.all-partners .parceiros-imgs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8vw;
+  background-color: var(--secondary-background-color);
+}
+
+.all-partners .parceiros-imgs img{
+  margin-bottom: 5vw;
+}
+
 /*Footer banner config*/
 .footer-banner{
   width: 100%;
   /* height: 270px; */
 
-}
-
-.footer-banner .banner-logo{
-  height: 130px;
-  background-color: var(--medium-green-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 30px;
-}
-
-.banner-logo img{
-  width: 80px;
 }
 
 .footer-banner h3{
