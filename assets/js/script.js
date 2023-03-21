@@ -84,12 +84,12 @@ if(arrowTest){
 //partners Slider slick config
 
 $('.partners .container').slick({
-    dots: true,
+    dots: false,
     arrows: true,
     infinite: true,
-    speed: 300,
-    autoplay: false,
-    autoplaySpeed: 400,
+    speed: 600,
+    autoplay: true,
+    autoplaySpeed: 1000,
     slidesToShow: 8,
     slidesToScroll: 2,
     centerMode: true,
@@ -159,7 +159,7 @@ $('.icon-phrases .container').slick({
     responsive: [{
             breakpoint: 1100,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 speed: 300,
                 autoplay: true,

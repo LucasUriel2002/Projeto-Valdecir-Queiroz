@@ -77,8 +77,10 @@
         <!--Intro phrase + down-arrow-->
         <section  class="phrase-arrow">
             <i id="arrow-test" class="material-symbols-outlined">expand_more</i>
-            <h2>"Nossa responsabilidade é difundir a agricultura orgânica no Brasil, sensibilizar 
-                    produtores para a importância do equilíbrio ecológico e desenvolver práticas agrícolas"</h2>  
+            <div class="phrase-arrow-h2-container">
+                <h2>"Nossa responsabilidade é difundir a agricultura orgânica no Brasil, sensibilizar 
+                    produtores para a importância do equilíbrio ecológico e desenvolver práticas agrícolas"</h2> 
+            </div> 
         </section>
 
         <!--Colorful icons + related quote container for aesthetic-->
@@ -125,15 +127,20 @@
 
         <!--About us page sample and link-->
         <section class="about-us"> 
+            
             <div class="container">
-                <h1>Quem somos?</h1>
+
                 <div class="image">   
                     <img src="assets/imgs/HD_imgs/about-us.jpg" alt="" class="">
                 </div> 
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt cum beatae reprehenderit
-                commodi! Accusantium reprehenderit ipsam eos impedit debitis voluptas qui ipsa optio, </h3>
-                
-                <a href="about-us.html"><button>Ler mais</button></a>   
+
+                <div class="about-us-content">
+                    <h1>Quem somos?</h1> 
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt cum beatae reprehenderit
+                    commodi! Accusantium reprehenderit ipsam eos impedit debitis voluptas qui ipsa optio, </h3>
+                    <a href="about-us.html"><button>Ler mais</button></a> 
+                </div>  
+
             </div>
         </section>
 
@@ -299,9 +306,9 @@
                 </div>        
             </div>
 
-            <div class="button-gallery">
-                <button>Ver mais</button>
-            </div>
+            <a href="gallery.html" class="button-gallery">
+                <button href="gallery.html">Ver mais</button>
+          </a>
 
         </section>
 
@@ -326,7 +333,7 @@
                 <h2>keiroz33@gmail.com</h2>
             </div>
             
-            <button class="whats"><i class="fa fa-whatsapp"></i> WhatsApp</button>
+            <button onclick ="location.href ='https://api.whatsapp.com/send?phone=5587996380012&text=Bom%20dia!%20Gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os!'" class="whats"><i class="fa fa-whatsapp"></i> WhatsApp</button>
         
         </section>
 
@@ -362,8 +369,7 @@
                 <a href="services.html"><li>Serviços</li></a>
                 <a href="contact-us.html"><li>Contatos</li></a>
                 <a href="gallery.html"><li>Galeria</li></a>
-                <a href="partners.html"><li>Parceiros</li></a>
-            </ul>
+                <a href="partners.html"><li>Parceiros</li></a>            </ul>
         </div>
 
         <div class="fale">
