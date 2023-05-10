@@ -1,4 +1,3 @@
-
 // navBar config
 const bar = document.getElementById('bar')
 const nav = document.getElementById('nav')
@@ -36,15 +35,15 @@ function myFunction() {
     if (window.pageYOffset > sticky) {
       navbar.classList.add("top")
       bar.classList.add("colormenu")
+      nav.classList.add("top")
     } else {
         if (nav.classList.contains('active') === false){
             navbar.classList.remove("top")
             bar.classList.remove("colormenu")
+            nav.classList.remove("top")
         }
     }
   }
-
- 
 
 
 // theme Button config
@@ -258,5 +257,3 @@ $('.image-services .container').slick({
         }]  
 
     });    
-
-

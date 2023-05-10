@@ -1931,6 +1931,103 @@ footer button:hover {
 /*media Query*/
 
 @media  (min-width: 1100px) {
+  /* Basic */
+  button{
+    width: 150px;
+    height: 50px;
+    font-size: 14pt;
+    border-radius: 23px;
+  }
+  /* nav-bar */
+  #responsive{
+    display: none;
+  }
+
+  .logo{
+    margin-left: 130px;
+  }
+
+  #nav{
+    font-size: 14pt;
+    right: 0;
+    top: 80px;
+    left: 50px;
+    padding-left: 300px;
+    padding-right: 160px;
+    padding-top: 0;
+    flex-direction: row;
+    background-color: transparent;
+    height: 0px;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 9;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+
+  #nav a{
+    color: var(--text-white-color);
+  }
+
+  #nav i{
+    color: var(--text-white-color);
+  }
+
+  .services-list {
+    display: none;
+  }
+
+  #nav.top a{
+    color: black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #nav.top i{
+    color: black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #nav li a:hover, #nav li a.active {
+    color: var(--text-white-color);
+  }
+
+  #nav li a::after{
+    background: white;
+  }
+
+  #nav.top li a:hover, #nav.top li a.active {
+    color: var(--medium-green-color);
+  }
+
+  #nav.top li a::after{
+    background: var(--medium-green-color);
+  }
+
+  /* #nav.top .services-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 80px;
+    right: 0;
+    top: 25px;
+    left: 250px;
+    position: absolute;
+    background-color: var(--light-green-color);
+    border-radius: 10px;
+  } /
+
+  /Hero*/
+
+  .hero{
+    background-position: bottom 0 left 0px;
+  }
+
+  .hero h1{
+    font-size: 30pt;
+  }
+
    /* phrase-arrow */
    .phrase-arrow-h2-container{
     display: flex;
@@ -2229,10 +2326,8 @@ footer button:hover {
     display: block;
   }
 
-
-
-  /* About-Us Page */
-  /*About-Us Page config*/
+/* About-Us Page */
+/*About-Us Page config*/
 
 .about-us-page{
   display: flex;
@@ -2584,6 +2679,7 @@ footer button:hover {
 
 }
 
+
 @media  (min-width: 1720px) {
   /*Icon Phrases*/
   .icon-phrases{
@@ -2608,9 +2704,6 @@ footer button:hover {
   }
 
   /* Image Services main */
- 
-  
-
   /*About-us*/
   .about-us{
     height: 700px;
@@ -2858,10 +2951,6 @@ footer button:hover {
 
 
 }
-
-
-
-
 
 
 
