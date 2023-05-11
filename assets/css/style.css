@@ -1947,6 +1947,12 @@ footer button:hover {
     margin-left: 130px;
   }
 
+  .nav-icons {
+    display: flex;
+    align-items: left;
+    padding-right: 4vw;
+  }
+
   #nav{
     font-size: 14pt;
     right: 0;
@@ -1983,6 +1989,16 @@ footer button:hover {
 
   #nav.top i{
     color: black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  body.dark-theme #nav.top a{
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  body.dark-theme #nav.top i{
+    color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
@@ -2026,6 +2042,29 @@ footer button:hover {
 
   .hero h1{
     font-size: 30pt;
+  }
+
+  #generalServices.hero{
+    height: 30vh;
+  }
+
+  #generalServices.hero h1 {
+    font-size: 30pt;
+    padding-top: 2vw;
+  }
+
+  #generalServices.acessoria{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 4vw;
+  }
+
+  #generalServices.certificado{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 4vw;
   }
 
    /* phrase-arrow */
@@ -2514,10 +2553,6 @@ footer button:hover {
 
 /* Services template pages */
 
-#generalServices.certificado h1{
-  font-size: 18pt;
-}
-
 .service-template{
  padding: 100px 100px 0 100px;
  height: 680px;
@@ -2676,11 +2711,89 @@ footer button:hover {
     transform: translateY(750px);
   }
   
+  /*Footer*/
+
+  footer {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 10vw;
+  }
+
+  .fale textarea {
+    border-radius: 10px;
+    padding: 1.3vw;
+    line-height: 1.4;
+  }
+
+  .ta-1 {
+    width: 25vw;
+  }
+
+  .ta-2 {
+    width: 35vw;
+    height: 10vw;
+  }
+
+  .acesso {
+    width: 100vw;
+  }
+
+  footer p {
+    font-size: 15pt;
+  }
+
+  footer li {
+    font-size: 15pt;
+    margin: 0.8vw;
+  }
+
+  footer h1{
+    font-size: 20pt;
+  }
 
 }
 
 
 @media  (min-width: 1720px) {
+
+  /*General*/
+
+  .whats{
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+  }
+
+  /*Navbar*/
+  .logo{
+    margin-left: 350px;
+  }
+
+  .nav-icons {
+    display: flex;
+    align-items: left;
+    padding-right: 10vw;
+  }
+
+  #nav{
+    font-size: 16pt;
+    right: 0;
+    top: 80px;
+    left: 50px;
+    padding-left: 500px;
+    padding-right: 350px;
+    padding-top: 0;
+    flex-direction: row;
+    background-color: transparent;
+    height: 0px;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 9;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+
   /*Icon Phrases*/
   .icon-phrases{
    margin-bottom: 30px;
@@ -2838,8 +2951,48 @@ footer button:hover {
   margin-bottom: 5vw;
   padding: 0 10px 0 10px;
 }
-  
+
+  /*Footer*/
+
+  footer {
+    padding: 50px;
+    gap: 10vw;
+    height: 600px;
   }
+
+  .fale textarea {
+    border-radius: 10px;
+    padding: 1vw;
+    line-height: 1;
+  }
+
+  .ta-1 {
+    width: 20vw;
+  }
+
+  .ta-2 {
+    width: 30vw;
+    height: 15vw;
+  }
+
+  .acesso {
+    width: 60vw;
+  }
+
+  footer p {
+    font-size: 18pt;
+  }
+
+  footer li {
+    font-size: 18pt;
+    margin: 1vw;
+  }
+
+  footer h1{
+    font-size: 23pt;
+  }
+  
+}
 
 
 
