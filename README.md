@@ -4,7 +4,7 @@
 
 <h1>Projeto para criação do website para a empresa <br> "Terra Ecológica Consultoria"</h1>
 
-Esse projeto foi o primeiro site que fiz, tive o intuito de aprender e absorver experiencia na prática, neste projeto eu encontrei muitos desafios<br/>
+Esse projeto foi o primeiro site que fiz, tive o intuito de aprender e absorver experiencia na prática, neste projeto eu encontrei muitos desafios
 e aprendi muitas coisas que eu nem imaginava! Com o andamento do projeto eu percebi que havia cometido erros e tentei absorver o máximo possível 
 para melhorar e não os cometer de novo em um futuro projeto. 
 
