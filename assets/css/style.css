@@ -35,6 +35,7 @@ body{
   transition: background-color .25s, color .25s;
 }
 
+
 h1{
   font-size: 18pt;
 }
@@ -170,10 +171,6 @@ body.dark-theme .list a{
   color: var(--text-dark-light-grey-color);
 }
 
-body.dark-theme .hero{
-  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/IMG_2959.jpg");
-}
-
 body.dark-theme .phrase-arrow {
   color: var(--text-dark-light-grey-color);
 }
@@ -287,11 +284,17 @@ body.dark-theme footer button:hover{
   color: var(--text-dark-lighter-grey-color);
 }
 
+body.dark-theme .abt-text{
+  color: var(--text-white-color);
+}
+
+body.dark-theme .our-values{
+  color: var(--text-white-color);
+}
+
 /*About-us dark theme*/
 
-body.dark-theme #abt-us.hero{
-  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/IMG_2925.jpg");
-}
+
 
 body.dark-theme .history h1{
   color: var(--text-dark-lighter-grey-color);
@@ -303,9 +306,6 @@ body.dark-theme .history p{
 
 /*Contact-us dark theme*/
 
-body.dark-theme #cont-us.hero{
-  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/acerola1.jpg");
-}
 
 body.dark-theme .contact-us h1{
   color: var(--text-dark-lighter-grey-color);
@@ -332,10 +332,6 @@ body.dark-theme .google-mapa {
 
 /*Services dark theme*/
 
-body.dark-theme #srvc.hero{
-  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/goiaba.jpg");
-}
-
 
 body.dark-theme .services-explanation{
     color: var(--text-dark-lighter-grey-color);
@@ -359,30 +355,6 @@ body.dark-theme .partners p{
 
 /*General services dark theme*/
 
-body.dark-theme #generalServices.hero{
-  background-image: linear-gradient(180deg, rgba(0,67,255,0.2959383582534576) 0%, rgba(0,67,255,0.29873947870163686) 100%),
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/cursos.jpg");
-}
-
-body.dark-theme #generalServices.consultoria{
-  background-image: linear-gradient(180deg, rgba(0,67,255,0.2959383582534576) 0%, rgba(0,67,255,0.29873947870163686) 100%),
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/acerolaMostrando.jpg");
-}
-
-body.dark-theme #generalServices.acessoria{
-  background-image: linear-gradient(180deg, rgba(0,67,255,0.2959383582534576) 0%, rgba(0,67,255,0.29873947870163686) 100%),
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/notebook.jpg");
-}
-
-body.dark-theme #generalServices.certificado{
-  background-image: linear-gradient(180deg, rgba(0,67,255,0.2959383582534576) 0%, rgba(0,67,255,0.29873947870163686) 100%),
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/certificado.jpg");
-}
-
 body.dark-theme .service-template h1{
   color: var(--text-dark-lighter-grey-color);
 }
@@ -393,15 +365,10 @@ body.dark-theme .service-template p{
 
 /*Gallery dark theme*/
 
-body.dark-theme #gal.hero{
-  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/HD_imgs/12697414_1263341080359760_359460311908228984_o.jpg");
-}
+
 
 /*Partners dark theme*/
 
-body.dark-theme #part.hero{
-  background-image: linear-gradient(180deg, rgba(26,48,110,0.3323529240797881) 0%, rgba(27,95,107,0.3323529240797881) 35%, rgba(25,72,111,0.33) 100%), repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px), url("../imgs/logos/terraEco.png");
-}
 
 body.dark-theme .all-partners h1{
   color: var(--text-dark-lighter-grey-color);
@@ -671,15 +638,25 @@ ul input:checked ~ .services-list {
 
 /* linear-gradient(180deg, rgba(15,15,15,0.888268156424581) 0%, rgba(0,0,0,0.3268156424581006) 12%, rgba(255,255,255,0) 100%) */
 
+.filter_shadow{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  z-index: 7;
+}
 .hero {
-    background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
+    /* background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
     repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-    url("../imgs/HD_imgs/IMG_2959.jpg");
+    url("../imgs/HD_imgs/IMG_2959.jpg"); */
+    background-image: url("../imgs/HD_imgs/campo_verde.jpeg");
     background-size: 4px 4px;
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: bottom 0 left -200px;
+    background-position: bottom 0 left -300px;
     border-radius: 0% 0% 50% 50% / 0% 60% 7% 7% ;  
     text-align: center;
     display: flex;
@@ -693,7 +670,13 @@ ul input:checked ~ .services-list {
 .hero h1 {
   color: white;
   font-size: 22pt;
+  z-index: 8;
 }
+.hero h3 {
+  z-index: 8;
+}
+
+
 
 
 /* Icon-Phrases */
@@ -1133,9 +1116,7 @@ ul input:checked ~ .services-list {
 /*About Us hero*/
 
 #abt-us.hero{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
-    repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-    url("../imgs/HD_imgs/IMG_2925.jpg");
+  background-image: url("../imgs/HD_imgs/IMG_2925.jpg");
     background-size: 4px 4px;
     background-position: bottom 0 left 0;
     height: 40vh;
@@ -1311,9 +1292,7 @@ ul input:checked ~ .services-list {
 /*Services hero*/
 
 #srvc.hero{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/goiaba.jpg");
+  background-image: url("../imgs/HD_imgs/goiaba.jpg");
   background-size: 4px 4px;
   background-position: bottom 0 left 0;
   height: 40vh;
@@ -1394,9 +1373,7 @@ ul input:checked ~ .services-list {
 /*General Services Hero*/
 
 #generalServices.hero{
-  background-image: linear-gradient(180deg, rgba(161,255,0,0.3015405991498161) 0%, rgba(161,255,0,0.29873947870163686) 100%),
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/cursos.jpg");
+  background-image: url("../imgs/HD_imgs/cursos.jpg");
   background-size: 4px 4px;
   background-position: bottom -50px left 0;
   height: 12vh;
@@ -1408,10 +1385,13 @@ ul input:checked ~ .services-list {
 }
 
 #generalServices.consultoria{
-  background-image: linear-gradient(180deg, rgba(161,255,0,0.3015405991498161) 0%, rgba(161,255,0,0.29873947870163686) 100%), 
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/acerolaMostrando.jpg");
+  background-image: url("../imgs/HD_imgs/acerolaMostrando.jpg");
   background-position: bottom -150px left 0;
+}
+
+#generalServices.cursos{
+  background-image: url("../imgs/HD_imgs/foto\ \(12\).JPEG");
+  background-position: bottom 900px left 0;
 }
 
 #generalServices.consultoria h1{
@@ -1419,9 +1399,7 @@ ul input:checked ~ .services-list {
 }
 
 #generalServices.acessoria{
-  background-image: linear-gradient(180deg, rgba(161,255,0,0.3015405991498161) 0%, rgba(161,255,0,0.29873947870163686) 100%), 
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/notebook.jpg");
+  background-image: url("../imgs/HD_imgs/notebook.jpg");
   height: 15vh;
 }
 
@@ -1430,15 +1408,20 @@ ul input:checked ~ .services-list {
 }
 
 #generalServices.certificado{
-  background-image: linear-gradient(180deg, rgba(161,255,0,0.3015405991498161) 0%, rgba(161,255,0,0.29873947870163686) 100%), 
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/certificado.jpg");
+  background-image: url("../imgs/HD_imgs/certificado.jpg");
   height: 15vh;
 }
 
 #generalServices.certificado h1{
   font-size: 18pt;
 }
+
+#generalServices.insumos{
+  background-image: url("../imgs/HD_imgs/capa_insumos.JPEG");
+  height: 15vh;
+}
+
+
 
 .service-template{
   width: 100%;
@@ -1487,9 +1470,7 @@ ul input:checked ~ .services-list {
 /*Hero config*/
 
 #cont-us.hero{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/acerola1.jpg");
+  background-image: url("../imgs/HD_imgs/acerola1.jpg");
   background-size: 4px 4px;
   background-position: bottom 0 left 0;
   height: 40vh;
@@ -1553,11 +1534,9 @@ ul input:checked ~ .services-list {
 /*Hero config*/
 
 #part.hero{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/logos/terraEco.png");
+  background-image: url("../imgs/HD_imgs/pessoas.jpg");
   background-size: 4px 4px;
-  background-position: bottom 0px left 0;
+  background-position: bottom 0px left -100px;
   height: 40vh;
   width: 100%;
   background-size: cover;
@@ -1579,7 +1558,7 @@ ul input:checked ~ .services-list {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 8vw;
+  padding: 12vw;
 }
 
 .all-partners .clientes-text{
@@ -1736,9 +1715,7 @@ footer button:hover {
 /*Hero config*/
 
 #gal.hero{
-  background-image: linear-gradient(180deg, rgba(211,255,131,0.3323529240797881) 0%, rgba(212,206,53,0.3323529240797881) 35%, rgba(123,255,0,0.33) 100%), 
-  repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px),
-  url("../imgs/HD_imgs/12697414_1263341080359760_359460311908228984_o.jpg");
+  background-image: url("../imgs/HD_imgs/12697414_1263341080359760_359460311908228984_o.jpg");
   background-size: 4px 4px;
   background-position: bottom 0 left 0;
   height: 40vh;
@@ -1866,7 +1843,7 @@ footer button:hover {
 }
 .about-us-page .container{
   padding: 7vh;
-  height: 650px;
+  height: 830px;
   width: 100%;
   text-align: center;
   overflow: hidden;
@@ -2085,17 +2062,19 @@ footer button:hover {
   /* Image Services */
   .image-services .slider{
     text-align: center; 
-    width: 300px !important;
-    height: 300px;
+    width: 220px !important;
+    height: 220px;
     
     box-shadow: var(--box-shadow-slider);
     -webkit-box-shadow: var(--box-shadow-slider);
     -moz-box-shadow: var(--box-shadow-slider);
   }
+
   
   /* .image-services .slick-current{
     height: 300px;
   } */
+
 
   .image-services .container{
     width: 100% ;
@@ -2103,9 +2082,15 @@ footer button:hover {
 
   .image-services .container .slick-slide {
     margin: 40px;
-    transform: translateX(-35px);
+    transform: translateX(-15px);
+    font-size:x-small;
   }
 
+  .image-services .slider h1 {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: medium;
+   }
 
   /*Icon Phrases*/
   .icon-phrases .slider{
@@ -2555,14 +2540,15 @@ footer button:hover {
 
 .service-template{
  padding: 100px 100px 0 100px;
- height: 680px;
+ height: 1100px;
 }
 
 .service-template .container{
   display: flex;
   text-align: justify;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
+  align-items: start;
 }
 
 .service-template .container p {
@@ -2590,6 +2576,7 @@ footer button:hover {
   justify-content: center;
   align-items: center;
 }
+
 
 /* Contact-Us Page */
 
@@ -2827,6 +2814,12 @@ footer button:hover {
     align-content: center;
   }
 
+  .services-explanation{
+   padding-left: 300px;
+   padding-right: 300px;
+   text-align: center;
+  }
+
   /*Partners Slider main*/
   .partners{
     height: 500px;
@@ -2888,15 +2881,32 @@ footer button:hover {
 
 .service-template{
   padding: 100px 300px 0 300px;
-  height: 625px;
+  height: 1000px;
   }
 
 
   .image-services .container .slick-slide {
-    margin: 20px 5px 5px 5px;
+    margin: 10px 2px 2px 2px;
     transform: translateX(80px);
-    
   }
+
+  .image-services .container {
+    width: 100%;
+    margin-bottom: 50px;
+ 
+  }
+
+  .image-services .slider{
+    text-align: center; 
+    width: 300px !important;
+    height: 300px;
+    
+    box-shadow: var(--box-shadow-slider);
+    -webkit-box-shadow: var(--box-shadow-slider);
+    -moz-box-shadow: var(--box-shadow-slider);
+  }
+  
+  
 
   /*Partners page config*/
 .all-partners{
@@ -3052,7 +3062,7 @@ footer button:hover {
 
   .service-template{
     padding: 40px 50px 0 50px;
-    height: 900px;
+    height: 1600px;
    }
    
   .service-template img{
@@ -3062,15 +3072,28 @@ footer button:hover {
     margin: 20px;
   }
 
-  
-
 }
 
 @media  (max-width: 530px) {
   /*Image Services*/
+  .filter_shadow{
+    height: 150px;
+  }
 
+  #secondary{
+    margin-top: 0px!important;
+  }
+
+  .service-template{
+    height: 1800px;
+   }
   .image-services{
-    margin-top: 300px;
+    margin-top: 600px !important;
+    padding: 10px 0 25px 0;
+  }
+  #seconday .image-services{
+    margin-top: 300px !important;
+    padding: 10px 0 25px 0;
   }
 
   .image-services .container{
@@ -3103,6 +3126,31 @@ footer button:hover {
   }
 
 
+}
+
+@media  (max-width: 420px) {
+  .all-partners .clientes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8vw;
+  }
+
+  .image-services{
+    margin-top: 750px !important;
+    padding: 10px 0 25px 0;
+  }
+  }
+  
+@media  (max-width: 390px) {
+.all-partners .clientes{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8vw;
+}
 }
 
 

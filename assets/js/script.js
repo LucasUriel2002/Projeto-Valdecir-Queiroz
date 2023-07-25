@@ -216,6 +216,7 @@ $('.image-services .container').slick({
     responsive: [{
         breakpoint: 1100,
         settings: {
+            arrows: true,
             slidesToShow: 4,
             slidesToScroll: 1,
             speed: 300,
