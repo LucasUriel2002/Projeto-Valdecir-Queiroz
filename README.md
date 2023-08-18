@@ -3,8 +3,9 @@
 
 
 <h1>Projeto para criação do website para a empresa <br> "Terra Ecológica Consultoria"</h1>
-
-Esse projeto foi o primeiro site que fiz, tive o intuito de aprender e absorver experiencia na prática, neste projeto eu encontrei muitos desafios
+ O projeto consiste em um website estático com diversas páginas, cada uma servindo ao seu proposito específico. O website tem a possibilidade de alternar entre tema claro e escuro, possui alguns sliders interativos e esta portado para dispositivos moveis. 
+<br/><br/>
+  Esse projeto foi o primeiro site que fiz, tive o intuito de aprender e absorver experiencia na prática, neste projeto eu encontrei muitos desafios
 e aprendi muitas coisas que eu nem imaginava! Com o andamento do projeto eu percebi que havia cometido erros e tentei absorver o máximo possível 
 para melhorar e não os cometer de novo em um futuro projeto. 
 
